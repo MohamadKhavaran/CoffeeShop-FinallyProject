@@ -63,9 +63,9 @@ namespace WindowsFormsApp1.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Drink_Coffee_icon {
+        internal static System.Drawing.Bitmap _8610577 {
             get {
-                object obj = ResourceManager.GetObject("Drink_Coffee_icon", resourceCulture);
+                object obj = ResourceManager.GetObject("_8610577", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -73,9 +73,29 @@ namespace WindowsFormsApp1.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap roastedcoffee {
+        internal static System.Drawing.Bitmap about_us_22_removebg_preview {
             get {
-                object obj = ResourceManager.GetObject("roastedcoffee", resourceCulture);
+                object obj = ResourceManager.GetObject("about_us_22_removebg_preview", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap coffee_rorozoa_3_04 {
+            get {
+                object obj = ResourceManager.GetObject("coffee_rorozoa_3_04", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Drink_Coffee_icon {
+            get {
+                object obj = ResourceManager.GetObject("Drink_Coffee_icon", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
