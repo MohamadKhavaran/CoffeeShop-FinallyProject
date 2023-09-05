@@ -9,3 +9,4 @@ C:\Users\Modern\Documents\GitHub\CoffeeShop-FinallyProject\CoffeeShop\Source\Win
 C:\Users\Modern\Documents\GitHub\CoffeeShop-FinallyProject\CoffeeShop\Source\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
 C:\Users\Modern\Documents\GitHub\CoffeeShop-FinallyProject\CoffeeShop\Source\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
 C:\Users\Modern\Documents\GitHub\CoffeeShop-FinallyProject\CoffeeShop\Source\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.FormMain.resources
+C:\Users\Modern\Documents\GitHub\CoffeeShop-FinallyProject\CoffeeShop\Source\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.UserInterFaces.FormMenu.resources

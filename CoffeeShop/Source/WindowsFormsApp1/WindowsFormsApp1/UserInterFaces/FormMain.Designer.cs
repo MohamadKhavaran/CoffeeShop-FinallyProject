@@ -48,6 +48,7 @@
             this.Menu.Size = new System.Drawing.Size(360, 91);
             this.Menu.TabIndex = 0;
             this.Menu.Text = "Menu     ";
+            this.Menu.Click += new System.EventHandler(this.Menu_Click);
             this.Menu.MouseEnter += new System.EventHandler(this.Menu_MouseEnter);
             this.Menu.MouseLeave += new System.EventHandler(this.Menu_MouseLeave);
             // 
