@@ -42,11 +42,6 @@ namespace WindowsFormsApp1.UserInterFaces
             Dessert.ForeColor = Color.Yellow;   
         }
 
-        private void Dessert_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void Dessert_MouseLeave(object sender, EventArgs e)
         {
             Dessert.ForeColor = Color.Black;
@@ -89,11 +84,6 @@ namespace WindowsFormsApp1.UserInterFaces
 
         }
 
-        private void FormMenu_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void HotDrink_MouseEnter(object sender, EventArgs e)
         {
             HotDrink.ForeColor = Color.Yellow;  
@@ -102,6 +92,26 @@ namespace WindowsFormsApp1.UserInterFaces
         private void HotDrink_MouseLeave(object sender, EventArgs e)
         {
             HotDrink.ForeColor = Color.Black;
+        }
+
+        private void special_offer_MouseEnter(object sender, EventArgs e)
+        {
+            special_offer.ForeColor = Color.Yellow; 
+        }
+
+        private void special_offer_MouseLeave(object sender, EventArgs e)
+        {
+            special_offer.ForeColor = Color.Black;
+        }
+
+        private void special_offer_MouseEnter_1(object sender, EventArgs e)
+        {
+            special_offer.ForeColor = Color.Yellow;
+        }
+
+        private void special_offer_MouseLeave_1(object sender, EventArgs e)
+        {
+            special_offer.ForeColor = Color.Black;
         }
     }
 }
