@@ -20,13 +20,26 @@ namespace WindowsFormsApp1.LogicLayers
             }
             return null;
         }
-        internal bool Insert(string FullName, string Email, string Phone)
+        internal bool Insert(string FirstName, string FamilyName, string Email, string Phone)
         {
             return SqlServerWorker.Execute
                 (
-                "Insert Into Information(FullName , Email , Phone)" +
-                "Values(" + $"N'{FullName}'," + $"N'{Email}'," + $"N'{Phone}'" + ");"
+                "Insert Into Information(FirstName, FamilyName , Email , Phone , User_Id)" +
+                "Values(" + $"N'{FirstName}'," + $"N'{FamilyName}'," + $"N'{Email}'," + $"N'{Phone}' ," +$"N'{0}');"
                 );
+        }
+        internal bool Update(string FirstName, string FamilyName, string Email, string Phone)
+        {
+            return SqlServerWorker.Execute
+                (
+                "UPDATE Information Set " +
+                "FirstName = " + $"N'{FirstName}',FamilyName = " + $"N'{FamilyName}', Email = " + $"N'{Email}', Phone = " + $"N'{Phone}'" + 
+                "WHERE User_Id = "+$"N'{0}'"
+                );
+        }
+        internal bool Delete()
+        {
+            return SqlServerWorker.Execute($"DELETE FROM INFORMATION WHERE User_ID={0};");
         }
 
     }

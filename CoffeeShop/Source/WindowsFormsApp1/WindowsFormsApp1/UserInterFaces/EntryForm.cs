@@ -47,7 +47,6 @@ namespace WindowsFormsApp1.UserInterFaces
             PhoneTextBox.BackColor = Color.LimeGreen;
             c = 1;
             if (PhoneTextBox.Text.Trim().Count() == 0)
-
             {
                 PhoneTextBox.BackColor = Color.Red;
                 c = 0;
@@ -62,7 +61,7 @@ namespace WindowsFormsApp1.UserInterFaces
                 d = 0;
             }
 
-            if (EmailTextBox.Text.Contains("@gmail.com"))
+            if (EmailTextBox.Text.Contains("@gmail.com") && EmailTextBox.Text.Count() > 10)
             {
                 EmailTextBox.BackColor = Color.LimeGreen;
                 d = 1;
@@ -96,13 +95,13 @@ namespace WindowsFormsApp1.UserInterFaces
             else if (a == 1 && b == 1 && c == 1 && d == 1)
             {
                 LLUsers lLUsers = new LLUsers();
-                string FullName = this.nameTextBox.Text.Trim() + this.FamilyNameTextBox.Text.Trim();
-                lLUsers.Insert(FullName, this.EmailTextBox.Text.Trim(), this.PhoneTextBox.Text.Trim());
+                lLUsers.Insert(this.nameTextBox.Text.Trim(), this.FamilyNameTextBox.Text.Trim(), this.EmailTextBox.Text.Trim(), this.PhoneTextBox.Text.Trim());
                 MessageBox.Show("Information Saved Successfully");
                 FormMain formMain = new FormMain();
                 formMain.ShowDialog();
                 this.Close();
             }
         }
+
     }
 }

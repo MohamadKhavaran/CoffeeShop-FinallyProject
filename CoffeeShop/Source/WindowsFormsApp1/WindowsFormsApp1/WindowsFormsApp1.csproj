@@ -49,6 +49,12 @@
     <Compile Include="DataAccess\SqlServerWorker.cs" />
     <Compile Include="DatRow.cs" />
     <Compile Include="LogicLayers\LLUsers.cs" />
+    <Compile Include="UserInterFaces\Edit_Information.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserInterFaces\Edit_Information.Designer.cs">
+      <DependentUpon>Edit_Information.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserInterFaces\EntryForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -69,6 +75,9 @@
     <Compile Include="UserInterFaces\FormMenu.Designer.cs">
       <DependentUpon>FormMenu.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="UserInterFaces\Edit_Information.resx">
+      <DependentUpon>Edit_Information.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UserInterFaces\EntryForm.resx">
       <DependentUpon>EntryForm.cs</DependentUpon>
     </EmbeddedResource>

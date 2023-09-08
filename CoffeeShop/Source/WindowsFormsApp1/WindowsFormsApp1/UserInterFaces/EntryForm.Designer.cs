@@ -44,10 +44,10 @@
             // nameTextBox
             // 
             this.nameTextBox.BackColor = System.Drawing.Color.White;
-            this.nameTextBox.Font = new System.Drawing.Font("Copperplate Gothic Bold", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nameTextBox.Font = new System.Drawing.Font("Century", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nameTextBox.Location = new System.Drawing.Point(229, 118);
             this.nameTextBox.Name = "nameTextBox";
-            this.nameTextBox.Size = new System.Drawing.Size(447, 26);
+            this.nameTextBox.Size = new System.Drawing.Size(447, 28);
             this.nameTextBox.TabIndex = 1;
             this.nameTextBox.TextChanged += new System.EventHandler(this.nameTextBox_TextChanged);
             // 
@@ -57,9 +57,9 @@
             this.name.Font = new System.Drawing.Font("Cooper Black", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.name.Location = new System.Drawing.Point(26, 118);
             this.name.Name = "name";
-            this.name.Size = new System.Drawing.Size(97, 26);
+            this.name.Size = new System.Drawing.Size(154, 26);
             this.name.TabIndex = 7;
-            this.name.Text = "Name : ";
+            this.name.Text = "FirstName : ";
             // 
             // title
             // 
@@ -74,10 +74,10 @@
             // EmailTextBox
             // 
             this.EmailTextBox.BackColor = System.Drawing.Color.White;
-            this.EmailTextBox.Font = new System.Drawing.Font("Copperplate Gothic Bold", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EmailTextBox.Font = new System.Drawing.Font("Century", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.EmailTextBox.Location = new System.Drawing.Point(229, 261);
             this.EmailTextBox.Name = "EmailTextBox";
-            this.EmailTextBox.Size = new System.Drawing.Size(447, 26);
+            this.EmailTextBox.Size = new System.Drawing.Size(447, 28);
             this.EmailTextBox.TabIndex = 3;
             this.EmailTextBox.TextChanged += new System.EventHandler(this.EmailTextBox_TextChanged);
             // 
@@ -94,10 +94,10 @@
             // PhoneTextBox
             // 
             this.PhoneTextBox.BackColor = System.Drawing.Color.White;
-            this.PhoneTextBox.Font = new System.Drawing.Font("Copperplate Gothic Bold", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PhoneTextBox.Font = new System.Drawing.Font("Century", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PhoneTextBox.Location = new System.Drawing.Point(229, 328);
             this.PhoneTextBox.Name = "PhoneTextBox";
-            this.PhoneTextBox.Size = new System.Drawing.Size(447, 26);
+            this.PhoneTextBox.Size = new System.Drawing.Size(447, 28);
             this.PhoneTextBox.TabIndex = 4;
             this.PhoneTextBox.TextChanged += new System.EventHandler(this.PhoneTextBox_TextChanged);
             // 
@@ -114,10 +114,10 @@
             // FamilyNameTextBox
             // 
             this.FamilyNameTextBox.BackColor = System.Drawing.Color.White;
-            this.FamilyNameTextBox.Font = new System.Drawing.Font("Copperplate Gothic Bold", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FamilyNameTextBox.Font = new System.Drawing.Font("Century", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FamilyNameTextBox.Location = new System.Drawing.Point(229, 186);
             this.FamilyNameTextBox.Name = "FamilyNameTextBox";
-            this.FamilyNameTextBox.Size = new System.Drawing.Size(447, 26);
+            this.FamilyNameTextBox.Size = new System.Drawing.Size(447, 28);
             this.FamilyNameTextBox.TabIndex = 2;
             this.FamilyNameTextBox.TextChanged += new System.EventHandler(this.FamilyNameTextBox_TextChanged);
             // 
@@ -172,16 +172,15 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.TextBox nameTextBox;
         private System.Windows.Forms.Label name;
         private System.Windows.Forms.Label title;
-        private System.Windows.Forms.TextBox EmailTextBox;
         private System.Windows.Forms.Label email;
-        private System.Windows.Forms.TextBox PhoneTextBox;
         private System.Windows.Forms.Label Phone;
-        private System.Windows.Forms.TextBox FamilyNameTextBox;
         private System.Windows.Forms.Label FamilyName;
         private System.Windows.Forms.Button buttonConfrim;
+        internal System.Windows.Forms.TextBox nameTextBox;
+        internal System.Windows.Forms.TextBox EmailTextBox;
+        internal System.Windows.Forms.TextBox PhoneTextBox;
+        internal System.Windows.Forms.TextBox FamilyNameTextBox;
     }
 }
