@@ -1,5 +1,8 @@
 ﻿using System;
+using System.Data;
 using System.Windows.Forms;
+using WindowsFormsApp1.LogicLayers;
+using WindowsFormsApp1.UserInterFaces;
 namespace WindowsFormsApp1
 {
     internal static class Program
@@ -12,7 +15,13 @@ namespace WindowsFormsApp1
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new UserInterFaces.Entry());
+            LLUsers lLUser = new LLUsers();
+            DataRow dataRow = lLUser.IsNullLogin();
+            if (dataRow == null)
+                Application.Run(new FormEntry());
+            else
+                Application.Run(new FormMain());
+
         }
     }
 }

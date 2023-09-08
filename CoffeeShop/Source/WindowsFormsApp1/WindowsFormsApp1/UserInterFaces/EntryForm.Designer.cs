@@ -1,6 +1,6 @@
 ﻿namespace WindowsFormsApp1.UserInterFaces
 {
-    partial class Entry
+    partial class FormEntry
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Entry));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormEntry));
             this.nameTextBox = new System.Windows.Forms.TextBox();
             this.name = new System.Windows.Forms.Label();
             this.title = new System.Windows.Forms.Label();
@@ -38,16 +38,17 @@
             this.Phone = new System.Windows.Forms.Label();
             this.FamilyNameTextBox = new System.Windows.Forms.TextBox();
             this.FamilyName = new System.Windows.Forms.Label();
+            this.buttonConfrim = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // nameTextBox
             // 
-            this.nameTextBox.BackColor = System.Drawing.SystemColors.Menu;
+            this.nameTextBox.BackColor = System.Drawing.Color.White;
             this.nameTextBox.Font = new System.Drawing.Font("Copperplate Gothic Bold", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nameTextBox.Location = new System.Drawing.Point(229, 118);
             this.nameTextBox.Name = "nameTextBox";
             this.nameTextBox.Size = new System.Drawing.Size(447, 26);
-            this.nameTextBox.TabIndex = 0;
+            this.nameTextBox.TabIndex = 1;
             this.nameTextBox.TextChanged += new System.EventHandler(this.nameTextBox_TextChanged);
             // 
             // name
@@ -57,7 +58,7 @@
             this.name.Location = new System.Drawing.Point(26, 118);
             this.name.Name = "name";
             this.name.Size = new System.Drawing.Size(97, 26);
-            this.name.TabIndex = 1;
+            this.name.TabIndex = 7;
             this.name.Text = "Name : ";
             // 
             // title
@@ -67,17 +68,17 @@
             this.title.Location = new System.Drawing.Point(220, 9);
             this.title.Name = "title";
             this.title.Size = new System.Drawing.Size(231, 84);
-            this.title.TabIndex = 2;
+            this.title.TabIndex = 6;
             this.title.Text = "Welcome ";
             // 
             // EmailTextBox
             // 
-            this.EmailTextBox.BackColor = System.Drawing.SystemColors.Menu;
+            this.EmailTextBox.BackColor = System.Drawing.Color.White;
             this.EmailTextBox.Font = new System.Drawing.Font("Copperplate Gothic Bold", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.EmailTextBox.Location = new System.Drawing.Point(229, 261);
             this.EmailTextBox.Name = "EmailTextBox";
             this.EmailTextBox.Size = new System.Drawing.Size(447, 26);
-            this.EmailTextBox.TabIndex = 0;
+            this.EmailTextBox.TabIndex = 3;
             this.EmailTextBox.TextChanged += new System.EventHandler(this.EmailTextBox_TextChanged);
             // 
             // email
@@ -87,17 +88,17 @@
             this.email.Location = new System.Drawing.Point(25, 258);
             this.email.Name = "email";
             this.email.Size = new System.Drawing.Size(98, 26);
-            this.email.TabIndex = 1;
+            this.email.TabIndex = 9;
             this.email.Text = "Email : ";
             // 
             // PhoneTextBox
             // 
-            this.PhoneTextBox.BackColor = System.Drawing.SystemColors.Menu;
+            this.PhoneTextBox.BackColor = System.Drawing.Color.White;
             this.PhoneTextBox.Font = new System.Drawing.Font("Copperplate Gothic Bold", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PhoneTextBox.Location = new System.Drawing.Point(229, 328);
             this.PhoneTextBox.Name = "PhoneTextBox";
             this.PhoneTextBox.Size = new System.Drawing.Size(447, 26);
-            this.PhoneTextBox.TabIndex = 0;
+            this.PhoneTextBox.TabIndex = 4;
             this.PhoneTextBox.TextChanged += new System.EventHandler(this.PhoneTextBox_TextChanged);
             // 
             // Phone
@@ -107,17 +108,17 @@
             this.Phone.Location = new System.Drawing.Point(19, 328);
             this.Phone.Name = "Phone";
             this.Phone.Size = new System.Drawing.Size(104, 26);
-            this.Phone.TabIndex = 1;
+            this.Phone.TabIndex = 0;
             this.Phone.Text = "Phone : ";
             // 
             // FamilyNameTextBox
             // 
-            this.FamilyNameTextBox.BackColor = System.Drawing.SystemColors.Menu;
+            this.FamilyNameTextBox.BackColor = System.Drawing.Color.White;
             this.FamilyNameTextBox.Font = new System.Drawing.Font("Copperplate Gothic Bold", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FamilyNameTextBox.Location = new System.Drawing.Point(229, 186);
             this.FamilyNameTextBox.Name = "FamilyNameTextBox";
             this.FamilyNameTextBox.Size = new System.Drawing.Size(447, 26);
-            this.FamilyNameTextBox.TabIndex = 0;
+            this.FamilyNameTextBox.TabIndex = 2;
             this.FamilyNameTextBox.TextChanged += new System.EventHandler(this.FamilyNameTextBox_TextChanged);
             // 
             // FamilyName
@@ -127,15 +128,29 @@
             this.FamilyName.Location = new System.Drawing.Point(25, 188);
             this.FamilyName.Name = "FamilyName";
             this.FamilyName.Size = new System.Drawing.Size(177, 26);
-            this.FamilyName.TabIndex = 1;
+            this.FamilyName.TabIndex = 8;
             this.FamilyName.Text = "FamilyName : ";
             // 
-            // Entry
+            // buttonConfrim
+            // 
+            this.buttonConfrim.BackColor = System.Drawing.Color.DarkGreen;
+            this.buttonConfrim.Font = new System.Drawing.Font("Cooper Black", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonConfrim.Location = new System.Drawing.Point(519, 402);
+            this.buttonConfrim.Name = "buttonConfrim";
+            this.buttonConfrim.Size = new System.Drawing.Size(182, 50);
+            this.buttonConfrim.TabIndex = 5;
+            this.buttonConfrim.Text = "Confrim";
+            this.buttonConfrim.UseVisualStyleBackColor = false;
+            this.buttonConfrim.Click += new System.EventHandler(this.buttonConfrim_Click);
+            this.buttonConfrim.MouseEnter += new System.EventHandler(this.buttonConfrim_MouseEnter);
+            // 
+            // FormEntry
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.IndianRed;
-            this.ClientSize = new System.Drawing.Size(701, 470);
+            this.ClientSize = new System.Drawing.Size(706, 463);
+            this.Controls.Add(this.buttonConfrim);
             this.Controls.Add(this.title);
             this.Controls.Add(this.Phone);
             this.Controls.Add(this.email);
@@ -148,7 +163,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
-            this.Name = "Entry";
+            this.Name = "FormEntry";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "EntryForm";
             this.ResumeLayout(false);
@@ -167,5 +182,6 @@
         private System.Windows.Forms.Label Phone;
         private System.Windows.Forms.TextBox FamilyNameTextBox;
         private System.Windows.Forms.Label FamilyName;
+        private System.Windows.Forms.Button buttonConfrim;
     }
 }
