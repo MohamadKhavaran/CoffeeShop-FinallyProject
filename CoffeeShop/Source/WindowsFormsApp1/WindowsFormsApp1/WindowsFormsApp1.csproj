@@ -47,19 +47,24 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DataAccess\SqlServerWorker.cs" />
-    <Compile Include="DatRow.cs" />
     <Compile Include="LogicLayers\LLUsers.cs" />
-    <Compile Include="UserInterFaces\Edit_Information.cs">
+    <Compile Include="UserInterFaces\FormEditInfo.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="UserInterFaces\Edit_Information.Designer.cs">
-      <DependentUpon>Edit_Information.cs</DependentUpon>
+    <Compile Include="UserInterFaces\FormEditInfo.Designer.cs">
+      <DependentUpon>FormEditInfo.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserInterFaces\EntryForm.cs">
+    <Compile Include="UserInterFaces\FormEntry.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="UserInterFaces\EntryForm.Designer.cs">
-      <DependentUpon>EntryForm.cs</DependentUpon>
+    <Compile Include="UserInterFaces\FormEntry.Designer.cs">
+      <DependentUpon>FormEntry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserInterFaces\FormCoffee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserInterFaces\FormCoffee.Designer.cs">
+      <DependentUpon>FormCoffee.cs</DependentUpon>
     </Compile>
     <Compile Include="UserInterFaces\FormMain.cs">
       <SubType>Form</SubType>
@@ -75,11 +80,14 @@
     <Compile Include="UserInterFaces\FormMenu.Designer.cs">
       <DependentUpon>FormMenu.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="UserInterFaces\Edit_Information.resx">
-      <DependentUpon>Edit_Information.cs</DependentUpon>
+    <EmbeddedResource Include="UserInterFaces\FormEditInfo.resx">
+      <DependentUpon>FormEditInfo.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserInterFaces\EntryForm.resx">
-      <DependentUpon>EntryForm.cs</DependentUpon>
+    <EmbeddedResource Include="UserInterFaces\FormEntry.resx">
+      <DependentUpon>FormEntry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserInterFaces\FormCoffee.resx">
+      <DependentUpon>FormCoffee.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserInterFaces\FormMain.resx">
       <DependentUpon>FormMain.cs</DependentUpon>
@@ -151,6 +159,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\red-banner-clipart-design-illustration-free-png.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cart.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

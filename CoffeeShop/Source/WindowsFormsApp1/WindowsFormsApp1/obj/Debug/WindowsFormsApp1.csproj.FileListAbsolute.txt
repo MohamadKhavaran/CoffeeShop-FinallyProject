@@ -11,4 +11,5 @@ C:\Users\Modern\Documents\GitHub\CoffeeShop-FinallyProject\CoffeeShop\Source\Win
 C:\Users\Modern\Documents\GitHub\CoffeeShop-FinallyProject\CoffeeShop\Source\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.FormMain.resources
 C:\Users\Modern\Documents\GitHub\CoffeeShop-FinallyProject\CoffeeShop\Source\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.UserInterFaces.FormMenu.resources
 C:\Users\Modern\Documents\GitHub\CoffeeShop-FinallyProject\CoffeeShop\Source\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.UserInterFaces.FormEntry.resources
-C:\Users\Modern\Documents\GitHub\CoffeeShop-FinallyProject\CoffeeShop\Source\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.UserInterFaces.Edit_Information.resources
+C:\Users\Modern\Documents\GitHub\CoffeeShop-FinallyProject\CoffeeShop\Source\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.UserInterFaces.FormEditInfo.resources
+C:\Users\Modern\Documents\GitHub\CoffeeShop-FinallyProject\CoffeeShop\Source\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.UserInterFaces.FormCoffee.resources

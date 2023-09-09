@@ -55,8 +55,10 @@ namespace WindowsFormsApp1
 
         private void Menu_Click(object sender, EventArgs e)
         {
-            FormMenu Menu = new FormMenu();
-            Menu.ShowDialog();
+            this.Hide();
+            FormMenu formMenu = new FormMenu();
+            formMenu.ShowDialog();
+            this.Close();
         }
 
         private void Change_Info_Click(object sender, EventArgs e)
@@ -67,7 +69,7 @@ namespace WindowsFormsApp1
             string FamilyName = (string)dataRow["FamilyName"];
             string Email = (string)dataRow["Email"];
             string Phone = (string)dataRow["Phone"];
-            Edit_Information edit_Information = new Edit_Information();
+            FormEditInfo edit_Information = new FormEditInfo();
             edit_Information.nameTextBox.Text = FirstName;
             edit_Information.FamilyNameTextBox.Text = FamilyName;
             edit_Information.EmailTextBox.Text = Email;

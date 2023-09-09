@@ -1,6 +1,6 @@
 ﻿namespace WindowsFormsApp1.UserInterFaces
 {
-    partial class Edit_Information
+    partial class FormEditInfo
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Edit_Information));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormEditInfo));
             this.nameTextBox = new System.Windows.Forms.TextBox();
             this.name = new System.Windows.Forms.Label();
             this.EmailTextBox = new System.Windows.Forms.TextBox();

@@ -10,9 +10,9 @@ using System.Windows.Forms;
 using WindowsFormsApp1.LogicLayers;
 namespace WindowsFormsApp1.UserInterFaces
 {
-    public partial class Edit_Information : Form
+    public partial class FormEditInfo : Form
     {
-        public Edit_Information()
+        public FormEditInfo()
         {
             InitializeComponent();
         }

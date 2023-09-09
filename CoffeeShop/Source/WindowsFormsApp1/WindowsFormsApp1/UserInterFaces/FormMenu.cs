@@ -12,6 +12,7 @@ namespace WindowsFormsApp1.UserInterFaces
 {
     public partial class FormMenu : Form
     {
+        private FormMain form;
         public FormMenu()
         {
             InitializeComponent();
@@ -111,7 +112,33 @@ namespace WindowsFormsApp1.UserInterFaces
 
         private void special_offer_MouseLeave_1(object sender, EventArgs e)
         {
-            special_offer.ForeColor = Color.Black;
+            special_offer.ForeColor = Color.Firebrick;
+        }
+
+        private void Back_MouseEnter(object sender, EventArgs e)
+        {
+            Back.ForeColor = Color.Yellow;
+        }
+
+        private void Back_MouseLeave(object sender, EventArgs e)
+        {
+            Back.ForeColor= Color.White;
+        }
+
+        private void Back_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FormMain formMain = new FormMain();
+            formMain.ShowDialog();
+            this.Close();
+        }
+
+        private void labelCoffee_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FormCoffee formCoffee = new FormCoffee();
+            formCoffee.ShowDialog();
+            this.Close();
         }
     }
 }
