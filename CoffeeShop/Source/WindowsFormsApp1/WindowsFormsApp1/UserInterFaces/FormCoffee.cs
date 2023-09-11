@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using WindowsFormsApp1.LogicLayers;
 namespace WindowsFormsApp1.UserInterFaces
 {
     public partial class FormCoffee : Form
@@ -15,8 +15,41 @@ namespace WindowsFormsApp1.UserInterFaces
         public FormCoffee()
         {
             InitializeComponent();
+            CountShopping.Text = Count_Purchases().ToString();
         }
 
+        private int Count_Purchases()
+        {
+            int Count_Purchases = 0;
+            LLPurchase purchase = new LLPurchase();
+            DataTable dataTable = purchase.Select();
+            DataRow dataRow;
+            int countRows = dataTable.Rows.Count;
+            for (int i = 0; i < countRows; i++)
+            {
+                dataRow = dataTable.Rows[i];
+                Count_Purchases += Convert.ToInt32(dataRow["Number"]);
+            }
+            return Count_Purchases;
+        }
+        private bool CheckIs(string Nameproduct, ref int Total_Price, ref int Count_Purchase)
+        {
+            LLPurchase purchase = new LLPurchase();
+            DataTable dataTable = purchase.Select();
+            DataRow dataRow;
+            int countRows = dataTable.Rows.Count;
+            for (int i = 0; i < countRows; i++)
+            {
+                dataRow = dataTable.Rows[i];
+                if (dataRow["Name"].Equals(Nameproduct))
+                {
+                    Count_Purchase = Convert.ToInt32(dataRow["Number"]);
+                    Total_Price = Convert.ToInt32(dataRow["Price"]);
+                    return true;
+                }
+            }
+            return false;
+        }
         private void Back_Click(object sender, EventArgs e)
         {
             this.Hide();
@@ -127,7 +160,24 @@ namespace WindowsFormsApp1.UserInterFaces
 
         private void ChAffogato_Click(object sender, EventArgs e)
         {
+            // Affogato : 3$
 
+            int Temp_CountShpping = Convert.ToInt32(CountShopping.Text);
+            Temp_CountShpping++;
+            CountShopping.Text = Temp_CountShpping.ToString();
+            LLPurchase lPurchase = new LLPurchase();
+            int Count_Purchase = 0;
+            int Total_Price = 0;
+            if (CheckIs("Affogato", ref Total_Price, ref Count_Purchase))
+            {
+                Total_Price += 3; // += Product Price
+                Count_Purchase++;
+                lPurchase.Update("Affogato", Total_Price, Count_Purchase);
+            }
+            else
+            {
+                lPurchase.Insert("Affogato", 3);
+            }
         }
 
         private void labelAffogato_Click(object sender, EventArgs e)
@@ -166,7 +216,7 @@ namespace WindowsFormsApp1.UserInterFaces
 
         private void ChRedEye_MouseEnter(object sender, EventArgs e)
         {
-            ChRedEye.ForeColor = Color.GreenYellow; 
+            ChRedEye.ForeColor = Color.GreenYellow;
         }
         private void ChRedEye_MouseLeave(object sender, EventArgs e)
         {
@@ -179,6 +229,162 @@ namespace WindowsFormsApp1.UserInterFaces
                 "as the combination of brewed coffee and espresso can create a much higher caffeine content than a regular cup of coffee. " +
                 "However, it's important to remember that too much caffeine can have negative health effects, " +
                 "so it's best to drink red-eye coffee in moderation.", "Description", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        private void ChBlackCoffee_Click(object sender, EventArgs e)
+        {
+            // BlackCoffee : 3$
+            int Temp_CountShpping = Convert.ToInt32(CountShopping.Text);
+            Temp_CountShpping++;
+            CountShopping.Text = Temp_CountShpping.ToString();
+            LLPurchase lPurchase = new LLPurchase();
+            int Count_Purchase = 0;
+            int Total_Price = 0;
+            if (CheckIs("BlackCoffee", ref Total_Price, ref Count_Purchase))
+            {
+                Total_Price += 3; // += Product Price
+                Count_Purchase++;
+                lPurchase.Update("BlackCoffee", Total_Price, Count_Purchase);
+            }
+            else
+            {
+                lPurchase.Insert("BlackCoffee", 3);
+            }
+        }
+
+        private void ChEspresso_Click(object sender, EventArgs e)
+        {
+            // Espresso: 2$
+            int Temp_CountShpping = Convert.ToInt32(CountShopping.Text);
+            Temp_CountShpping++;
+            CountShopping.Text = Temp_CountShpping.ToString();
+            LLPurchase lPurchase = new LLPurchase();
+            int Count_Purchase = 0;
+            int Total_Price = 0;
+            if (CheckIs("Espresso", ref Total_Price, ref Count_Purchase))
+            {
+                Total_Price += 2; // += Product Price
+                Count_Purchase++;
+                lPurchase.Update("Espresso", Total_Price, Count_Purchase);
+            }
+            else
+            {
+                lPurchase.Insert("Espresso", 2);
+            }
+        }
+
+        private void ChLatte_Click(object sender, EventArgs e)
+        {
+            // Latte : 2$
+            int Temp_CountShpping = Convert.ToInt32(CountShopping.Text);
+            Temp_CountShpping++;
+            CountShopping.Text = Temp_CountShpping.ToString();
+            LLPurchase lPurchase = new LLPurchase();
+            int Count_Purchase = 0;
+            int Total_Price = 0;
+            if (CheckIs("Latte", ref Total_Price, ref Count_Purchase))
+            {
+                Total_Price += 2; // += Product Price
+                Count_Purchase++;
+                lPurchase.Update("Latte", Total_Price, Count_Purchase);
+            }
+            else
+            {
+                lPurchase.Insert("Latte", 2);
+            }
+        }
+
+        private void ChCappuccino_Click(object sender, EventArgs e)
+        {
+            // Cappuccino: 3$
+            int Temp_CountShpping = Convert.ToInt32(CountShopping.Text);
+            Temp_CountShpping++;
+            CountShopping.Text = Temp_CountShpping.ToString();
+            LLPurchase lPurchase = new LLPurchase();
+            int Count_Purchase = 0;
+            int Total_Price = 0;
+            if (CheckIs("Cappuccino", ref Total_Price, ref Count_Purchase))
+            {
+                Total_Price += 3; // += Product Price
+                Count_Purchase++;
+                lPurchase.Update("Cappuccino", Total_Price, Count_Purchase);
+            }
+            else
+            {
+                lPurchase.Insert("Cappuccino", 3);
+            }
+        }
+
+        private void ChAmericano_Click(object sender, EventArgs e)
+        {
+            // Americano : 2$
+            int Temp_CountShpping = Convert.ToInt32(CountShopping.Text);
+            Temp_CountShpping++;
+            CountShopping.Text = Temp_CountShpping.ToString();
+            LLPurchase lPurchase = new LLPurchase();
+            int Count_Purchase = 0;
+            int Total_Price = 0;
+            if (CheckIs("Americano", ref Total_Price, ref Count_Purchase))
+            {
+                Total_Price += 2; // += Product Price
+                Count_Purchase++;
+                lPurchase.Update("Americano", Total_Price, Count_Purchase);
+            }
+            else
+            {
+                lPurchase.Insert("Americano", 2);
+            }
+        }
+
+        private void ChIceCoffee_Click(object sender, EventArgs e)
+        {
+            // Ice Coffee : 3$
+            int Temp_CountShpping = Convert.ToInt32(CountShopping.Text);
+            Temp_CountShpping++;
+            CountShopping.Text = Temp_CountShpping.ToString();
+            LLPurchase lPurchase = new LLPurchase();
+            int Count_Purchase = 0;
+            int Total_Price = 0;
+            if (CheckIs("Ice Coffee", ref Total_Price, ref Count_Purchase))
+            {
+                Total_Price += 3; // += Product Price
+                Count_Purchase++;
+                lPurchase.Update("Ice Coffee", Total_Price, Count_Purchase);
+            }
+            else
+            {
+                lPurchase.Insert("Ice Coffee", 3);
+            }
+        }
+
+        private void ChRedEye_Click(object sender, EventArgs e)
+        {
+            // Red Eye : 2$
+
+            int Temp_CountShpping = Convert.ToInt32(CountShopping.Text);
+            Temp_CountShpping++;
+            CountShopping.Text = Temp_CountShpping.ToString();
+            LLPurchase lPurchase = new LLPurchase();
+            int Count_Purchase = 0;
+            int Total_Price = 0;
+            if (CheckIs("Red Eye", ref Total_Price, ref Count_Purchase))
+            {
+                Total_Price += 2; // += Product Price
+                Count_Purchase++;
+                lPurchase.Update("Red Eye", Total_Price, Count_Purchase);
+            }
+            else
+            {
+                lPurchase.Insert("Red Eye", 2);
+            }
+        }
+
+        private void shopingListToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FormPurchases_Show form = new FormPurchases_Show("Coffee");
+            form.ShowDialog();
+            this.Close();
         }
     }
 }

@@ -37,13 +37,14 @@
             // 
             // About
             // 
+            this.About.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.About.AutoSize = true;
             this.About.BackColor = System.Drawing.SystemColors.Desktop;
             this.About.Cursor = System.Windows.Forms.Cursors.Hand;
             this.About.Font = new System.Drawing.Font("Cooper Black", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.About.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.About.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.About.Location = new System.Drawing.Point(978, 140);
+            this.About.Location = new System.Drawing.Point(978, 181);
             this.About.Name = "About";
             this.About.Size = new System.Drawing.Size(316, 69);
             this.About.TabIndex = 1;
@@ -54,13 +55,14 @@
             // 
             // Login_as_admin
             // 
+            this.Login_as_admin.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.Login_as_admin.AutoSize = true;
             this.Login_as_admin.BackColor = System.Drawing.SystemColors.Desktop;
             this.Login_as_admin.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Login_as_admin.Font = new System.Drawing.Font("Cooper Black", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Login_as_admin.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.Login_as_admin.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.Login_as_admin.Location = new System.Drawing.Point(793, 245);
+            this.Login_as_admin.Location = new System.Drawing.Point(793, 327);
             this.Login_as_admin.Name = "Login_as_admin";
             this.Login_as_admin.Size = new System.Drawing.Size(501, 69);
             this.Login_as_admin.TabIndex = 2;
@@ -71,13 +73,14 @@
             // 
             // Change_Info
             // 
+            this.Change_Info.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.Change_Info.AutoSize = true;
             this.Change_Info.BackColor = System.Drawing.SystemColors.Desktop;
             this.Change_Info.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Change_Info.Font = new System.Drawing.Font("Cooper Black", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Change_Info.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.Change_Info.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.Change_Info.Location = new System.Drawing.Point(649, 350);
+            this.Change_Info.Location = new System.Drawing.Point(649, 473);
             this.Change_Info.Name = "Change_Info";
             this.Change_Info.Size = new System.Drawing.Size(645, 69);
             this.Change_Info.TabIndex = 3;
@@ -88,6 +91,7 @@
             // 
             // Menu
             // 
+            this.Menu.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.Menu.AutoSize = true;
             this.Menu.BackColor = System.Drawing.SystemColors.Desktop;
             this.Menu.Cursor = System.Windows.Forms.Cursors.Hand;

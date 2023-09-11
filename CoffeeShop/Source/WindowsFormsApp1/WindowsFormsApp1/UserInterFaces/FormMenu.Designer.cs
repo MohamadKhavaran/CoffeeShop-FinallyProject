@@ -47,6 +47,7 @@
             this.Back = new System.Windows.Forms.Label();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.shopingListToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.CountShopping = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
@@ -260,7 +261,8 @@
             // 
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.shopingListToolStripMenuItem});
+            this.shopingListToolStripMenuItem,
+            this.CountShopping});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(1105, 28);
@@ -275,6 +277,14 @@
             this.shopingListToolStripMenuItem.Name = "shopingListToolStripMenuItem";
             this.shopingListToolStripMenuItem.Size = new System.Drawing.Size(129, 24);
             this.shopingListToolStripMenuItem.Text = "Shoping List";
+            this.shopingListToolStripMenuItem.Click += new System.EventHandler(this.shopingListToolStripMenuItem_Click);
+            // 
+            // CountShopping
+            // 
+            this.CountShopping.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CountShopping.Name = "CountShopping";
+            this.CountShopping.Size = new System.Drawing.Size(32, 24);
+            this.CountShopping.Text = "0";
             // 
             // FormMenu
             // 
@@ -303,6 +313,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
             this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "FormMenu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Menu";
@@ -340,5 +351,6 @@
         private System.Windows.Forms.Label Back;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem shopingListToolStripMenuItem;
+        public System.Windows.Forms.ToolStripMenuItem CountShopping;
     }
 }

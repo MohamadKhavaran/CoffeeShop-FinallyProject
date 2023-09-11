@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using WindowsFormsApp1.LogicLayers;
 namespace WindowsFormsApp1.UserInterFaces
 {
     public partial class FormMenu : Form
@@ -16,6 +16,22 @@ namespace WindowsFormsApp1.UserInterFaces
         public FormMenu()
         {
             InitializeComponent();
+            CountShopping.Text = Count_Purchases().ToString();   
+        }
+
+        private int Count_Purchases()
+        {
+            int Count_Purchases = 0;
+            LLPurchase purchase = new LLPurchase();
+            DataTable dataTable = purchase.Select();
+            DataRow dataRow;
+            int countRows = dataTable.Rows.Count;
+            for (int i = 0; i < countRows; i++)
+            {
+                dataRow = dataTable.Rows[i];
+                Count_Purchases += Convert.ToInt32(dataRow["Number"]);
+            }
+            return Count_Purchases;
         }
         private void labelCoffee_MouseEnter(object sender, EventArgs e)
         {
@@ -138,6 +154,14 @@ namespace WindowsFormsApp1.UserInterFaces
             this.Hide();
             FormCoffee formCoffee = new FormCoffee();
             formCoffee.ShowDialog();
+            this.Close();
+        }
+
+        private void shopingListToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FormPurchases_Show form = new FormPurchases_Show("Menu");
+            form.ShowDialog();
             this.Close();
         }
     }
