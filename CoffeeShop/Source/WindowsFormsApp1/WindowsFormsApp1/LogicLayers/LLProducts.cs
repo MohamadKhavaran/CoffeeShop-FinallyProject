@@ -43,7 +43,7 @@ namespace WindowsFormsApp1.LogicLayers
 
         internal bool UpdateSell(int ProductCode)
         {
-            int ProductNumber =  0;
+            int ProductNumber = 0;
             if (CheckExistProduct(ProductCode, ref ProductNumber))
             {
                 ProductNumber--;
@@ -53,8 +53,31 @@ namespace WindowsFormsApp1.LogicLayers
                $" WHERE ProductCode = " + $"N'{ProductCode}'");
             }
             else
-                return false;   
+                return false;
         }
+
+        internal bool UpdateWithProductName(string ProductName) //For Add Removed Products In Shopping List
+        {
+            DataTable dataTable = Select();
+            DataRow dataRow;
+            int CountRows = dataTable.Rows.Count;
+            int ProductNumber = 0;
+            for (int i = 0; i < CountRows; i++)
+            {
+                dataRow = dataTable.Rows[i];
+                if ((dataRow["ProductName"]).ToString().Equals(ProductName))
+                {
+                    ProductNumber = Convert.ToInt32(dataRow["ProductNumber"]);
+                    ProductNumber++;
+                    break;
+                }
+            }
+            return SqlServerWorker.Execute
+              (
+              "UPDATE Products Set ProductNumber = " + $"N'{ProductNumber}'" +
+              $" WHERE ProductName = " + $"N'{ProductName}'");
+        }
+
         internal bool Delete(int ProductCode)
         {
             return SqlServerWorker.Execute($"DELETE FROM Products WHERE Name = {ProductCode};");
@@ -62,3 +85,5 @@ namespace WindowsFormsApp1.LogicLayers
 
     }
 }
+
+

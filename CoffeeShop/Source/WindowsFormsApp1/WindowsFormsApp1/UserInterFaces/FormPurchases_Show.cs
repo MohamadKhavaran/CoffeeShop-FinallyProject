@@ -33,8 +33,10 @@ namespace WindowsFormsApp1.UserInterFaces
 
             if (intIndexresetColumns == e.ColumnIndex)
             {
+                LLProducts lLProducts = new LLProducts();   
                 LLPurchase lPurchase = new LLPurchase();
                 string NameProduct = dataGridViewData["NameProduct", e.RowIndex].Value.ToString();
+                lLProducts.UpdateWithProductName(NameProduct);
                 int Total_Price = Convert.ToInt32(dataGridViewData["Price", e.RowIndex].Value);
                 int Count_Purchases = Convert.ToInt32(dataGridViewData["Number", e.RowIndex].Value);
                 if (Count_Purchases <= 1)
