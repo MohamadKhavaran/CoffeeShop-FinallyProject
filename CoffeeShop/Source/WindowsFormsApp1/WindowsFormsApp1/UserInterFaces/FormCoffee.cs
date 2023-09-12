@@ -15,41 +15,11 @@ namespace WindowsFormsApp1.UserInterFaces
         public FormCoffee()
         {
             InitializeComponent();
-            CountShopping.Text = Count_Purchases().ToString();
+            LLPurchase llPurchase = new LLPurchase();
+            CountShopping.Text = llPurchase.CountPurchases();
         }
 
-        private int Count_Purchases()
-        {
-            int Count_Purchases = 0;
-            LLPurchase purchase = new LLPurchase();
-            DataTable dataTable = purchase.Select();
-            DataRow dataRow;
-            int countRows = dataTable.Rows.Count;
-            for (int i = 0; i < countRows; i++)
-            {
-                dataRow = dataTable.Rows[i];
-                Count_Purchases += Convert.ToInt32(dataRow["Number"]);
-            }
-            return Count_Purchases;
-        }
-        private bool CheckIs(string Nameproduct, ref int Total_Price, ref int Count_Purchase)
-        {
-            LLPurchase purchase = new LLPurchase();
-            DataTable dataTable = purchase.Select();
-            DataRow dataRow;
-            int countRows = dataTable.Rows.Count;
-            for (int i = 0; i < countRows; i++)
-            {
-                dataRow = dataTable.Rows[i];
-                if (dataRow["Name"].Equals(Nameproduct))
-                {
-                    Count_Purchase = Convert.ToInt32(dataRow["Number"]);
-                    Total_Price = Convert.ToInt32(dataRow["Price"]);
-                    return true;
-                }
-            }
-            return false;
-        }
+
         private void Back_Click(object sender, EventArgs e)
         {
             this.Hide();
@@ -158,27 +128,7 @@ namespace WindowsFormsApp1.UserInterFaces
                 " but it's usually black. This drink is a popular choice for those who prefer a milder coffee taste or want to prolong the enjoyment of their espresso shot.", "Description", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
-        private void ChAffogato_Click(object sender, EventArgs e)
-        {
-            // Affogato : 3$
-
-            int Temp_CountShpping = Convert.ToInt32(CountShopping.Text);
-            Temp_CountShpping++;
-            CountShopping.Text = Temp_CountShpping.ToString();
-            LLPurchase lPurchase = new LLPurchase();
-            int Count_Purchase = 0;
-            int Total_Price = 0;
-            if (CheckIs("Affogato", ref Total_Price, ref Count_Purchase))
-            {
-                Total_Price += 3; // += Product Price
-                Count_Purchase++;
-                lPurchase.Update("Affogato", Total_Price, Count_Purchase);
-            }
-            else
-            {
-                lPurchase.Insert("Affogato", 3);
-            }
-        }
+       
 
         private void labelAffogato_Click(object sender, EventArgs e)
         {
@@ -234,148 +184,143 @@ namespace WindowsFormsApp1.UserInterFaces
         private void ChBlackCoffee_Click(object sender, EventArgs e)
         {
             // BlackCoffee : 3$
-            int Temp_CountShpping = Convert.ToInt32(CountShopping.Text);
-            Temp_CountShpping++;
-            CountShopping.Text = Temp_CountShpping.ToString();
-            LLPurchase lPurchase = new LLPurchase();
-            int Count_Purchase = 0;
-            int Total_Price = 0;
-            if (CheckIs("BlackCoffee", ref Total_Price, ref Count_Purchase))
+            LLProducts lLProducts = new LLProducts();
+            if (lLProducts.UpdateSell(0))
             {
-                Total_Price += 3; // += Product Price
-                Count_Purchase++;
-                lPurchase.Update("BlackCoffee", Total_Price, Count_Purchase);
+                int Temp_CountShpping = Convert.ToInt32(CountShopping.Text);
+                Temp_CountShpping++;
+                CountShopping.Text = Temp_CountShpping.ToString();
+                LLPurchase lPurchase = new LLPurchase();
+                lPurchase.CheckIs("BlackCoffee", 3);
             }
             else
             {
-                lPurchase.Insert("BlackCoffee", 3);
+                MessageBox.Show("This Product Is Not Available In Stock", "System Message", MessageBoxButtons.OK, MessageBoxIcon.Stop);
             }
+
         }
 
         private void ChEspresso_Click(object sender, EventArgs e)
         {
             // Espresso: 2$
-            int Temp_CountShpping = Convert.ToInt32(CountShopping.Text);
-            Temp_CountShpping++;
-            CountShopping.Text = Temp_CountShpping.ToString();
-            LLPurchase lPurchase = new LLPurchase();
-            int Count_Purchase = 0;
-            int Total_Price = 0;
-            if (CheckIs("Espresso", ref Total_Price, ref Count_Purchase))
+            LLProducts lLProducts = new LLProducts();
+            if (lLProducts.UpdateSell(1))
             {
-                Total_Price += 2; // += Product Price
-                Count_Purchase++;
-                lPurchase.Update("Espresso", Total_Price, Count_Purchase);
+                int Temp_CountShpping = Convert.ToInt32(CountShopping.Text);
+                Temp_CountShpping++;
+                CountShopping.Text = Temp_CountShpping.ToString();
+                LLPurchase lPurchase = new LLPurchase();
+                lPurchase.CheckIs("Espresso", 2);
             }
             else
             {
-                lPurchase.Insert("Espresso", 2);
+                MessageBox.Show("This Product Is Not Available In Stock", "System Message", MessageBoxButtons.OK, MessageBoxIcon.Stop);
             }
         }
 
         private void ChLatte_Click(object sender, EventArgs e)
         {
             // Latte : 2$
-            int Temp_CountShpping = Convert.ToInt32(CountShopping.Text);
-            Temp_CountShpping++;
-            CountShopping.Text = Temp_CountShpping.ToString();
-            LLPurchase lPurchase = new LLPurchase();
-            int Count_Purchase = 0;
-            int Total_Price = 0;
-            if (CheckIs("Latte", ref Total_Price, ref Count_Purchase))
+            LLProducts lLProducts = new LLProducts();
+            if (lLProducts.UpdateSell(2))
             {
-                Total_Price += 2; // += Product Price
-                Count_Purchase++;
-                lPurchase.Update("Latte", Total_Price, Count_Purchase);
+                int Temp_CountShpping = Convert.ToInt32(CountShopping.Text);
+                Temp_CountShpping++;
+                CountShopping.Text = Temp_CountShpping.ToString();
+                LLPurchase lPurchase = new LLPurchase();
+                lPurchase.CheckIs("Latte", 2);
             }
             else
             {
-                lPurchase.Insert("Latte", 2);
+                MessageBox.Show("This Product Is Not Available In Stock", "System Message", MessageBoxButtons.OK, MessageBoxIcon.Stop);
             }
         }
 
         private void ChCappuccino_Click(object sender, EventArgs e)
         {
             // Cappuccino: 3$
-            int Temp_CountShpping = Convert.ToInt32(CountShopping.Text);
-            Temp_CountShpping++;
-            CountShopping.Text = Temp_CountShpping.ToString();
-            LLPurchase lPurchase = new LLPurchase();
-            int Count_Purchase = 0;
-            int Total_Price = 0;
-            if (CheckIs("Cappuccino", ref Total_Price, ref Count_Purchase))
+            LLProducts lLProducts = new LLProducts();
+            if (lLProducts.UpdateSell(3))
             {
-                Total_Price += 3; // += Product Price
-                Count_Purchase++;
-                lPurchase.Update("Cappuccino", Total_Price, Count_Purchase);
+                int Temp_CountShpping = Convert.ToInt32(CountShopping.Text);
+                Temp_CountShpping++;
+                CountShopping.Text = Temp_CountShpping.ToString();
+                LLPurchase lPurchase = new LLPurchase();
+                lPurchase.CheckIs("Cappuccino", 3);
             }
             else
             {
-                lPurchase.Insert("Cappuccino", 3);
+                MessageBox.Show("This Product Is Not Available In Stock", "System Message", MessageBoxButtons.OK, MessageBoxIcon.Stop);
             }
         }
 
         private void ChAmericano_Click(object sender, EventArgs e)
         {
             // Americano : 2$
-            int Temp_CountShpping = Convert.ToInt32(CountShopping.Text);
-            Temp_CountShpping++;
-            CountShopping.Text = Temp_CountShpping.ToString();
-            LLPurchase lPurchase = new LLPurchase();
-            int Count_Purchase = 0;
-            int Total_Price = 0;
-            if (CheckIs("Americano", ref Total_Price, ref Count_Purchase))
+            LLProducts lLProducts = new LLProducts();
+            if (lLProducts.UpdateSell(4))
             {
-                Total_Price += 2; // += Product Price
-                Count_Purchase++;
-                lPurchase.Update("Americano", Total_Price, Count_Purchase);
+                int Temp_CountShpping = Convert.ToInt32(CountShopping.Text);
+                Temp_CountShpping++;
+                CountShopping.Text = Temp_CountShpping.ToString();
+                LLPurchase lPurchase = new LLPurchase();
+                lPurchase.CheckIs("Americano", 2);
             }
             else
             {
-                lPurchase.Insert("Americano", 2);
+                MessageBox.Show("This Product Is Not Available In Stock", "System Message", MessageBoxButtons.OK, MessageBoxIcon.Stop);
             }
         }
-
+        private void ChAffogato_Click(object sender, EventArgs e)
+        {
+            // Affogato : 3$
+            LLProducts lLProducts = new LLProducts();
+            if (lLProducts.UpdateSell(5))
+            {
+                int Temp_CountShpping = Convert.ToInt32(CountShopping.Text);
+                Temp_CountShpping++;
+                CountShopping.Text = Temp_CountShpping.ToString();
+                LLPurchase lPurchase = new LLPurchase();
+                lPurchase.CheckIs("Affogato", 3);
+            }
+            else
+            {
+                MessageBox.Show("This Product Is Not Available In Stock", "System Message", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+            }
+        }
         private void ChIceCoffee_Click(object sender, EventArgs e)
         {
             // Ice Coffee : 3$
-            int Temp_CountShpping = Convert.ToInt32(CountShopping.Text);
-            Temp_CountShpping++;
-            CountShopping.Text = Temp_CountShpping.ToString();
-            LLPurchase lPurchase = new LLPurchase();
-            int Count_Purchase = 0;
-            int Total_Price = 0;
-            if (CheckIs("Ice Coffee", ref Total_Price, ref Count_Purchase))
+            LLProducts lLProducts = new LLProducts();
+            if (lLProducts.UpdateSell(6))
             {
-                Total_Price += 3; // += Product Price
-                Count_Purchase++;
-                lPurchase.Update("Ice Coffee", Total_Price, Count_Purchase);
+                int Temp_CountShpping = Convert.ToInt32(CountShopping.Text);
+                Temp_CountShpping++;
+                CountShopping.Text = Temp_CountShpping.ToString();
+                LLPurchase lPurchase = new LLPurchase();
+                lPurchase.CheckIs("Ice Coffee", 3);
             }
             else
             {
-                lPurchase.Insert("Ice Coffee", 3);
+                MessageBox.Show("This Product Is Not Available In Stock", "System Message", MessageBoxButtons.OK, MessageBoxIcon.Stop);
             }
         }
 
         private void ChRedEye_Click(object sender, EventArgs e)
         {
             // Red Eye : 2$
-
-            int Temp_CountShpping = Convert.ToInt32(CountShopping.Text);
-            Temp_CountShpping++;
-            CountShopping.Text = Temp_CountShpping.ToString();
-            LLPurchase lPurchase = new LLPurchase();
-            int Count_Purchase = 0;
-            int Total_Price = 0;
-            if (CheckIs("Red Eye", ref Total_Price, ref Count_Purchase))
+            LLProducts lLProducts = new LLProducts();
+            if (lLProducts.UpdateSell(7))
             {
-                Total_Price += 2; // += Product Price
-                Count_Purchase++;
-                lPurchase.Update("Red Eye", Total_Price, Count_Purchase);
+                int Temp_CountShpping = Convert.ToInt32(CountShopping.Text);
+                Temp_CountShpping++;
+                CountShopping.Text = Temp_CountShpping.ToString();
+                LLPurchase lPurchase = new LLPurchase();
+                lPurchase.CheckIs("Red Eye", 2);
             }
             else
             {
-                lPurchase.Insert("Red Eye", 2);
+                MessageBox.Show("This Product Is Not Available In Stock", "System Message", MessageBoxButtons.OK, MessageBoxIcon.Stop);
             }
         }
 

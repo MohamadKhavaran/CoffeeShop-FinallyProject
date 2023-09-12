@@ -16,6 +16,42 @@ namespace WindowsFormsApp1.LogicLayers
             return SqlServerWorker.Select("Select * From Purchases");
 
         }
+        internal string CountPurchases()
+        {
+            int Count_Purchases = 0;
+            LLPurchase purchase = new LLPurchase();
+            DataTable dataTable = purchase.Select();
+            DataRow dataRow;
+            int countRows = dataTable.Rows.Count;
+            for (int i = 0; i < countRows; i++)
+            {
+                dataRow = dataTable.Rows[i];
+                Count_Purchases += Convert.ToInt32(dataRow["Number"]);
+            }
+            return Count_Purchases.ToString();
+        }
+        internal void CheckIs(string ProductName, int PriceProduct)
+        {
+            DataTable dataTable = Select();
+            DataRow dataRow;
+            int CountRows = dataTable.Rows.Count;
+            for (int i = 0; i < CountRows; i++)
+            {
+                dataRow = dataTable.Rows[i];
+                if (dataRow["Name"].Equals(ProductName))
+                {
+                    int CountPurchase = Convert.ToInt32(dataRow["Number"]);
+                    int TotalPrice = Convert.ToInt32(dataRow["Price"]);
+                    CountPurchase++;
+                    TotalPrice += PriceProduct;
+                    Update(ProductName, TotalPrice, CountPurchase);
+                    return;
+                }
+
+            }
+            Insert(ProductName, PriceProduct);
+
+        }
         internal bool Insert(string Name, int Price)
         {
             return SqlServerWorker.Execute

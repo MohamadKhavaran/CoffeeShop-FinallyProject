@@ -47,6 +47,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DataAccess\SqlServerWorker.cs" />
+    <Compile Include="LogicLayers\LLProducts.cs" />
     <Compile Include="LogicLayers\LLPurchase.cs" />
     <Compile Include="LogicLayers\LLUsers.cs" />
     <Compile Include="UserInterFaces\FormEditInfo.cs">
