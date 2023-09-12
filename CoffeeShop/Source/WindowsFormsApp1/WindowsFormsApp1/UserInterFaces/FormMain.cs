@@ -84,7 +84,10 @@ namespace WindowsFormsApp1
 
         private void Login_as_admin_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            FormAuthentication form  = new FormAuthentication();
+            form.ShowDialog();
+            this.Close();
         }
 
         private void Change_Info_MouseEnter(object sender, EventArgs e)

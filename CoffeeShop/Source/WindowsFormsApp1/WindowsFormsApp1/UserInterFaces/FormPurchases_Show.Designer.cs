@@ -31,11 +31,13 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormPurchases_Show));
             this.dataGridViewData = new System.Windows.Forms.DataGridView();
-            this.bindingSourceData = new System.Windows.Forms.BindingSource(this.components);
             this.NameProduct = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Price = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Number = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.RemoveOne = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.bindingSourceData = new System.Windows.Forms.BindingSource(this.components);
+            this.LablePrice = new System.Windows.Forms.Label();
+            this.TotalPrice = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewData)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSourceData)).BeginInit();
             this.SuspendLayout();
@@ -60,7 +62,7 @@
             this.dataGridViewData.ReadOnly = true;
             this.dataGridViewData.RowHeadersWidth = 51;
             this.dataGridViewData.RowTemplate.Height = 24;
-            this.dataGridViewData.Size = new System.Drawing.Size(846, 564);
+            this.dataGridViewData.Size = new System.Drawing.Size(846, 668);
             this.dataGridViewData.TabIndex = 0;
             this.dataGridViewData.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
@@ -105,12 +107,34 @@
             this.RemoveOne.ToolTipText = "Remove One";
             this.RemoveOne.UseColumnTextForButtonValue = true;
             // 
+            // LablePrice
+            // 
+            this.LablePrice.AutoSize = true;
+            this.LablePrice.Font = new System.Drawing.Font("Cooper Black", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LablePrice.Location = new System.Drawing.Point(252, 613);
+            this.LablePrice.Name = "LablePrice";
+            this.LablePrice.Size = new System.Drawing.Size(106, 39);
+            this.LablePrice.TabIndex = 2;
+            this.LablePrice.Text = "Price";
+            // 
+            // TotalPrice
+            // 
+            this.TotalPrice.AutoSize = true;
+            this.TotalPrice.Font = new System.Drawing.Font("Cooper Black", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TotalPrice.Location = new System.Drawing.Point(12, 613);
+            this.TotalPrice.Name = "TotalPrice";
+            this.TotalPrice.Size = new System.Drawing.Size(234, 39);
+            this.TotalPrice.TabIndex = 3;
+            this.TotalPrice.Text = "Total Price : ";
+            // 
             // FormPurchases_Show
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.IndianRed;
-            this.ClientSize = new System.Drawing.Size(846, 564);
+            this.BackColor = System.Drawing.SystemColors.Control;
+            this.ClientSize = new System.Drawing.Size(846, 668);
+            this.Controls.Add(this.LablePrice);
+            this.Controls.Add(this.TotalPrice);
             this.Controls.Add(this.dataGridViewData);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
@@ -121,6 +145,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewData)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSourceData)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -132,5 +157,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Price;
         private System.Windows.Forms.DataGridViewTextBoxColumn Number;
         private System.Windows.Forms.DataGridViewButtonColumn RemoveOne;
+        internal System.Windows.Forms.Label LablePrice;
+        private System.Windows.Forms.Label TotalPrice;
     }
 }

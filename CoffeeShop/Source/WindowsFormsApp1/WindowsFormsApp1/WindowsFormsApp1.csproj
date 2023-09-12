@@ -50,6 +50,18 @@
     <Compile Include="LogicLayers\LLProducts.cs" />
     <Compile Include="LogicLayers\LLPurchase.cs" />
     <Compile Include="LogicLayers\LLUsers.cs" />
+    <Compile Include="UserInterFaces\FormAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserInterFaces\FormAdmin.Designer.cs">
+      <DependentUpon>FormAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserInterFaces\FormAuthentication.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserInterFaces\FormAuthentication.Designer.cs">
+      <DependentUpon>FormAuthentication.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserInterFaces\FormEditInfo.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -88,6 +100,12 @@
     <Compile Include="UserInterFaces\FormPurchases_Show.Designer.cs">
       <DependentUpon>FormPurchases_Show.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="UserInterFaces\FormAdmin.resx">
+      <DependentUpon>FormAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserInterFaces\FormAuthentication.resx">
+      <DependentUpon>FormAuthentication.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UserInterFaces\FormEditInfo.resx">
       <DependentUpon>FormEditInfo.cs</DependentUpon>
     </EmbeddedResource>

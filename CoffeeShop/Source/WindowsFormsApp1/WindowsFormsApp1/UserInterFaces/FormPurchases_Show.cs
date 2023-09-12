@@ -18,8 +18,24 @@ namespace WindowsFormsApp1.UserInterFaces
         public FormPurchases_Show(string identifier_variable)
         {
             InitializeComponent();
+            CalculatePrice();
             this.identifier_variable = identifier_variable;
             LoadData();
+        }
+
+       private void CalculatePrice()
+        {
+            int TotalPrice = 0;
+            LLPurchase lLPurchase = new LLPurchase();
+            DataTable dataTable = lLPurchase.Select();
+            DataRow dataRow;
+            int CountRow = dataTable.Rows.Count;    
+            for(int i = 0; i < CountRow; i++)
+            {
+                dataRow = dataTable.Rows[i];
+                TotalPrice += Convert.ToInt32(dataRow["Price"]);                
+            }
+            LablePrice.Text=TotalPrice.ToString();
         }
 
         private void LoadData()
@@ -29,6 +45,7 @@ namespace WindowsFormsApp1.UserInterFaces
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
+            CalculatePrice();
             int intIndexresetColumns = dataGridViewData.Columns["RemoveOne"].Index;
 
             if (intIndexresetColumns == e.ColumnIndex)
@@ -73,5 +90,6 @@ namespace WindowsFormsApp1.UserInterFaces
                 }
             }
         }
+
     }
 }
