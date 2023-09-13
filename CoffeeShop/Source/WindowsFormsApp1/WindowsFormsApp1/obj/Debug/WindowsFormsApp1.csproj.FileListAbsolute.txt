@@ -16,3 +16,4 @@ C:\Users\Modern\Documents\GitHub\CoffeeShop-FinallyProject\CoffeeShop\Source\Win
 C:\Users\Modern\Documents\GitHub\CoffeeShop-FinallyProject\CoffeeShop\Source\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.UserInterFaces.FormPurchases_Show.resources
 C:\Users\Modern\Documents\GitHub\CoffeeShop-FinallyProject\CoffeeShop\Source\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.UserInterFaces.FormAdmin.resources
 C:\Users\Modern\Documents\GitHub\CoffeeShop-FinallyProject\CoffeeShop\Source\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.UserInterFaces.FormAuthentication.resources
+C:\Users\Modern\Documents\GitHub\CoffeeShop-FinallyProject\CoffeeShop\Source\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.UserInterFaces.FormColdDrinks.resources

@@ -84,6 +84,7 @@
             this.ColdDrink.Size = new System.Drawing.Size(399, 69);
             this.ColdDrink.TabIndex = 0;
             this.ColdDrink.Text = "Cold Drinks";
+            this.ColdDrink.Click += new System.EventHandler(this.ColdDrink_Click);
             this.ColdDrink.MouseEnter += new System.EventHandler(this.ColdDrink_MouseEnter);
             this.ColdDrink.MouseLeave += new System.EventHandler(this.ColdDrink_MouseLeave);
             // 

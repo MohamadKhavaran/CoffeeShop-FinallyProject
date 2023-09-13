@@ -45,13 +45,13 @@ namespace WindowsFormsApp1.UserInterFaces
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            CalculatePrice();
             int intIndexresetColumns = dataGridViewData.Columns["RemoveOne"].Index;
 
             if (intIndexresetColumns == e.ColumnIndex)
             {
                 LLProducts lLProducts = new LLProducts();   
                 LLPurchase lPurchase = new LLPurchase();
+                //                string ProductName = dataGridViewData["ProductName", e.RowIndex].Value.ToString();
                 string NameProduct = dataGridViewData["NameProduct", e.RowIndex].Value.ToString();
                 lLProducts.UpdateWithProductName(NameProduct);
                 int Total_Price = Convert.ToInt32(dataGridViewData["Price", e.RowIndex].Value);
@@ -59,12 +59,13 @@ namespace WindowsFormsApp1.UserInterFaces
                 if (Count_Purchases <= 1)
                 {
                     lPurchase.Delete(NameProduct);
+                    CalculatePrice();
                     LoadData();
-
                     return;
                 }
                 int Price_Product = Total_Price / Count_Purchases;
                 lPurchase.Update(NameProduct, (Total_Price - Price_Product), (Count_Purchases - 1));
+                CalculatePrice();
                 LoadData();
             }
             else
@@ -85,6 +86,13 @@ namespace WindowsFormsApp1.UserInterFaces
                 {
 
                     FormCoffee form = new FormCoffee();
+                    this.Hide();
+                    form.ShowDialog();
+                }
+                if (identifier_variable.Equals("Cold Drinks"))
+                {
+
+                    FormColdDrinks form = new FormColdDrinks();
                     this.Hide();
                     form.ShowDialog();
                 }

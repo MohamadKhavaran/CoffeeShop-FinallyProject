@@ -164,5 +164,13 @@ namespace WindowsFormsApp1.UserInterFaces
             form.ShowDialog();
             this.Close();
         }
+
+        private void ColdDrink_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FormColdDrinks formColdDrinks = new FormColdDrinks(); 
+            formColdDrinks.ShowDialog();
+            this.Close();
+        }
     }
 }
