@@ -28,10 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormColdDrinks));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormDesserts));
             this.Back = new System.Windows.Forms.Label();
-            this.LabelBlackCoffee = new System.Windows.Forms.Label();
-            this.ChBlackCoffee = new System.Windows.Forms.Label();
+            this.LableStrawberryJelly = new System.Windows.Forms.Label();
+            this.ChStrawberryJelly = new System.Windows.Forms.Label();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.shopingListToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.CountShopping = new System.Windows.Forms.ToolStripMenuItem();
@@ -55,6 +55,8 @@
             this.ChChocolateMilk = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.ChBananaMilk = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -65,7 +67,7 @@
             this.Back.Font = new System.Drawing.Font("Cooper Black", 28.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Back.ForeColor = System.Drawing.Color.White;
             this.Back.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.Back.Location = new System.Drawing.Point(16, 755);
+            this.Back.Location = new System.Drawing.Point(22, 778);
             this.Back.Name = "Back";
             this.Back.Size = new System.Drawing.Size(143, 54);
             this.Back.TabIndex = 1;
@@ -74,33 +76,33 @@
             this.Back.MouseEnter += new System.EventHandler(this.Back_MouseEnter);
             this.Back.MouseLeave += new System.EventHandler(this.Back_MouseLeave);
             // 
-            // LabelBlackCoffee
+            // LableStrawberryJelly
             // 
-            this.LabelBlackCoffee.AutoSize = true;
-            this.LabelBlackCoffee.Font = new System.Drawing.Font("Cooper Black", 28.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LabelBlackCoffee.ForeColor = System.Drawing.Color.Black;
-            this.LabelBlackCoffee.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.LabelBlackCoffee.Location = new System.Drawing.Point(16, 75);
-            this.LabelBlackCoffee.Name = "LabelBlackCoffee";
-            this.LabelBlackCoffee.Size = new System.Drawing.Size(360, 54);
-            this.LabelBlackCoffee.TabIndex = 2;
-            this.LabelBlackCoffee.Text = "Lemonade : 1$";
-            this.LabelBlackCoffee.Click += new System.EventHandler(this.LabelBlackCoffee_Click);
+            this.LableStrawberryJelly.AutoSize = true;
+            this.LableStrawberryJelly.Font = new System.Drawing.Font("Cooper Black", 28.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LableStrawberryJelly.ForeColor = System.Drawing.Color.Black;
+            this.LableStrawberryJelly.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.LableStrawberryJelly.Location = new System.Drawing.Point(16, 125);
+            this.LableStrawberryJelly.Name = "LableStrawberryJelly";
+            this.LableStrawberryJelly.Size = new System.Drawing.Size(530, 54);
+            this.LableStrawberryJelly.TabIndex = 2;
+            this.LableStrawberryJelly.Text = "Strawberry Jelly : 3$";
+            this.LableStrawberryJelly.Click += new System.EventHandler(this.LabelBlackCoffee_Click);
             // 
-            // ChBlackCoffee
+            // ChStrawberryJelly
             // 
-            this.ChBlackCoffee.AutoSize = true;
-            this.ChBlackCoffee.Font = new System.Drawing.Font("Cooper Black", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ChBlackCoffee.ForeColor = System.Drawing.Color.White;
-            this.ChBlackCoffee.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.ChBlackCoffee.Location = new System.Drawing.Point(416, 51);
-            this.ChBlackCoffee.Name = "ChBlackCoffee";
-            this.ChBlackCoffee.Size = new System.Drawing.Size(87, 91);
-            this.ChBlackCoffee.TabIndex = 2;
-            this.ChBlackCoffee.Text = "+";
-            this.ChBlackCoffee.Click += new System.EventHandler(this.ChBlackCoffee_Click);
-            this.ChBlackCoffee.MouseEnter += new System.EventHandler(this.ChBlackCoffee_MouseEnter);
-            this.ChBlackCoffee.MouseLeave += new System.EventHandler(this.ChBlackCoffee_MouseLeave);
+            this.ChStrawberryJelly.AutoSize = true;
+            this.ChStrawberryJelly.Font = new System.Drawing.Font("Cooper Black", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ChStrawberryJelly.ForeColor = System.Drawing.Color.White;
+            this.ChStrawberryJelly.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.ChStrawberryJelly.Location = new System.Drawing.Point(588, 94);
+            this.ChStrawberryJelly.Name = "ChStrawberryJelly";
+            this.ChStrawberryJelly.Size = new System.Drawing.Size(87, 91);
+            this.ChStrawberryJelly.TabIndex = 2;
+            this.ChStrawberryJelly.Text = "+";
+            this.ChStrawberryJelly.Click += new System.EventHandler(this.ChBlackCoffee_Click);
+            this.ChStrawberryJelly.MouseEnter += new System.EventHandler(this.ChBlackCoffee_MouseEnter);
+            this.ChStrawberryJelly.MouseLeave += new System.EventHandler(this.ChBlackCoffee_MouseLeave);
             // 
             // menuStrip1
             // 
@@ -110,7 +112,7 @@
             this.CountShopping});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1432, 30);
+            this.menuStrip1.Size = new System.Drawing.Size(1448, 28);
             this.menuStrip1.TabIndex = 3;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -120,7 +122,7 @@
             this.shopingListToolStripMenuItem.Image = global::WindowsFormsApp1.Properties.Resources.Cart;
             this.shopingListToolStripMenuItem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.shopingListToolStripMenuItem.Name = "shopingListToolStripMenuItem";
-            this.shopingListToolStripMenuItem.Size = new System.Drawing.Size(129, 26);
+            this.shopingListToolStripMenuItem.Size = new System.Drawing.Size(129, 24);
             this.shopingListToolStripMenuItem.Text = "Shoping List";
             this.shopingListToolStripMenuItem.Click += new System.EventHandler(this.shopingListToolStripMenuItem_Click);
             // 
@@ -128,7 +130,7 @@
             // 
             this.CountShopping.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CountShopping.Name = "CountShopping";
-            this.CountShopping.Size = new System.Drawing.Size(32, 26);
+            this.CountShopping.Size = new System.Drawing.Size(32, 24);
             this.CountShopping.Text = "0";
             // 
             // labelEspresso
@@ -137,11 +139,11 @@
             this.labelEspresso.Font = new System.Drawing.Font("Cooper Black", 28.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelEspresso.ForeColor = System.Drawing.Color.Black;
             this.labelEspresso.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.labelEspresso.Location = new System.Drawing.Point(16, 171);
+            this.labelEspresso.Location = new System.Drawing.Point(16, 208);
             this.labelEspresso.Name = "labelEspresso";
-            this.labelEspresso.Size = new System.Drawing.Size(271, 54);
+            this.labelEspresso.Size = new System.Drawing.Size(416, 54);
             this.labelEspresso.TabIndex = 2;
-            this.labelEspresso.Text = "Mojito : 1$";
+            this.labelEspresso.Text = "Cherry Jelly : 3$";
             this.labelEspresso.Click += new System.EventHandler(this.labelEspresso_Click);
             // 
             // ChEspresso
@@ -150,7 +152,7 @@
             this.ChEspresso.Font = new System.Drawing.Font("Cooper Black", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ChEspresso.ForeColor = System.Drawing.Color.White;
             this.ChEspresso.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.ChEspresso.Location = new System.Drawing.Point(340, 146);
+            this.ChEspresso.Location = new System.Drawing.Point(478, 183);
             this.ChEspresso.Name = "ChEspresso";
             this.ChEspresso.Size = new System.Drawing.Size(87, 91);
             this.ChEspresso.TabIndex = 2;
@@ -165,11 +167,11 @@
             this.labelLatte.Font = new System.Drawing.Font("Cooper Black", 28.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelLatte.ForeColor = System.Drawing.Color.Black;
             this.labelLatte.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.labelLatte.Location = new System.Drawing.Point(16, 267);
+            this.labelLatte.Location = new System.Drawing.Point(16, 304);
             this.labelLatte.Name = "labelLatte";
-            this.labelLatte.Size = new System.Drawing.Size(535, 54);
+            this.labelLatte.Size = new System.Drawing.Size(485, 54);
             this.labelLatte.TabIndex = 2;
-            this.labelLatte.Text = "Strawberry Milk : 2$ ";
+            this.labelLatte.Text = "Aloe vera  Jelly : 3$";
             this.labelLatte.Click += new System.EventHandler(this.labellatte_Click);
             // 
             // ChLatte
@@ -178,7 +180,7 @@
             this.ChLatte.Font = new System.Drawing.Font("Cooper Black", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ChLatte.ForeColor = System.Drawing.Color.White;
             this.ChLatte.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.ChLatte.Location = new System.Drawing.Point(572, 241);
+            this.ChLatte.Location = new System.Drawing.Point(544, 278);
             this.ChLatte.Name = "ChLatte";
             this.ChLatte.Size = new System.Drawing.Size(87, 91);
             this.ChLatte.TabIndex = 2;
@@ -193,11 +195,11 @@
             this.labelCappuccino.Font = new System.Drawing.Font("Cooper Black", 28.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelCappuccino.ForeColor = System.Drawing.Color.Black;
             this.labelCappuccino.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.labelCappuccino.Location = new System.Drawing.Point(16, 363);
+            this.labelCappuccino.Location = new System.Drawing.Point(16, 400);
             this.labelCappuccino.Name = "labelCappuccino";
-            this.labelCappuccino.Size = new System.Drawing.Size(329, 54);
+            this.labelCappuccino.Size = new System.Drawing.Size(508, 54);
             this.labelCappuccino.TabIndex = 2;
-            this.labelCappuccino.Text = "Mocktail : 2$";
+            this.labelCappuccino.Text = "Raspberry Jelly : 3$ ";
             this.labelCappuccino.Click += new System.EventHandler(this.labelCappuccino_Click);
             // 
             // ChCappuccino
@@ -206,7 +208,7 @@
             this.ChCappuccino.Font = new System.Drawing.Font("Cooper Black", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ChCappuccino.ForeColor = System.Drawing.Color.White;
             this.ChCappuccino.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.ChCappuccino.Location = new System.Drawing.Point(393, 336);
+            this.ChCappuccino.Location = new System.Drawing.Point(577, 373);
             this.ChCappuccino.Name = "ChCappuccino";
             this.ChCappuccino.Size = new System.Drawing.Size(87, 91);
             this.ChCappuccino.TabIndex = 2;
@@ -221,11 +223,11 @@
             this.labelAmericano.Font = new System.Drawing.Font("Cooper Black", 28.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelAmericano.ForeColor = System.Drawing.Color.Black;
             this.labelAmericano.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.labelAmericano.Location = new System.Drawing.Point(16, 459);
+            this.labelAmericano.Location = new System.Drawing.Point(16, 496);
             this.labelAmericano.Name = "labelAmericano";
-            this.labelAmericano.Size = new System.Drawing.Size(332, 54);
+            this.labelAmericano.Size = new System.Drawing.Size(488, 54);
             this.labelAmericano.TabIndex = 2;
-            this.labelAmericano.Text = "Bandung : 3$";
+            this.labelAmericano.Text = "Blueberry Jelly : 3$";
             this.labelAmericano.Click += new System.EventHandler(this.labelAmericano_Click);
             // 
             // ChAmericano
@@ -234,7 +236,7 @@
             this.ChAmericano.Font = new System.Drawing.Font("Cooper Black", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ChAmericano.ForeColor = System.Drawing.Color.White;
             this.ChAmericano.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.ChAmericano.Location = new System.Drawing.Point(399, 431);
+            this.ChAmericano.Location = new System.Drawing.Point(557, 468);
             this.ChAmericano.Name = "ChAmericano";
             this.ChAmericano.Size = new System.Drawing.Size(87, 91);
             this.ChAmericano.TabIndex = 2;
@@ -249,11 +251,11 @@
             this.labelAffogato.Font = new System.Drawing.Font("Cooper Black", 28.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelAffogato.ForeColor = System.Drawing.Color.Black;
             this.labelAffogato.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.labelAffogato.Location = new System.Drawing.Point(16, 555);
+            this.labelAffogato.Location = new System.Drawing.Point(16, 592);
             this.labelAffogato.Name = "labelAffogato";
-            this.labelAffogato.Size = new System.Drawing.Size(566, 54);
+            this.labelAffogato.Size = new System.Drawing.Size(419, 54);
             this.labelAffogato.TabIndex = 2;
-            this.labelAffogato.Text = "Vanilla Milkshake  : 2$";
+            this.labelAffogato.Text = "Orange Jelly : 3$";
             this.labelAffogato.Click += new System.EventHandler(this.labelAffogato_Click);
             // 
             // ChAffogato
@@ -262,7 +264,7 @@
             this.ChAffogato.Font = new System.Drawing.Font("Cooper Black", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ChAffogato.ForeColor = System.Drawing.Color.White;
             this.ChAffogato.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.ChAffogato.Location = new System.Drawing.Point(620, 526);
+            this.ChAffogato.Location = new System.Drawing.Point(507, 563);
             this.ChAffogato.Name = "ChAffogato";
             this.ChAffogato.Size = new System.Drawing.Size(87, 91);
             this.ChAffogato.TabIndex = 2;
@@ -277,11 +279,11 @@
             this.labelIceCoffee.Font = new System.Drawing.Font("Cooper Black", 28.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelIceCoffee.ForeColor = System.Drawing.Color.Black;
             this.labelIceCoffee.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.labelIceCoffee.Location = new System.Drawing.Point(826, 75);
+            this.labelIceCoffee.Location = new System.Drawing.Point(713, 120);
             this.labelIceCoffee.Name = "labelIceCoffee";
-            this.labelIceCoffee.Size = new System.Drawing.Size(430, 54);
+            this.labelIceCoffee.Size = new System.Drawing.Size(346, 54);
             this.labelIceCoffee.TabIndex = 2;
-            this.labelIceCoffee.Text = "Orange Juice : 1$";
+            this.labelIceCoffee.Text = "Apple Pie : 2$";
             this.labelIceCoffee.Click += new System.EventHandler(this.labelIceCoffee_Click);
             // 
             // labelRedEye
@@ -290,11 +292,11 @@
             this.labelRedEye.Font = new System.Drawing.Font("Cooper Black", 28.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelRedEye.ForeColor = System.Drawing.Color.Black;
             this.labelRedEye.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.labelRedEye.Location = new System.Drawing.Point(16, 648);
+            this.labelRedEye.Location = new System.Drawing.Point(16, 685);
             this.labelRedEye.Name = "labelRedEye";
-            this.labelRedEye.Size = new System.Drawing.Size(674, 54);
+            this.labelRedEye.Size = new System.Drawing.Size(425, 54);
             this.labelRedEye.TabIndex = 2;
-            this.labelRedEye.Text = "Watermelon Milkshake : 3$";
+            this.labelRedEye.Text = "Banana Jelly : 3$";
             this.labelRedEye.Click += new System.EventHandler(this.labelRedEye_Click);
             // 
             // ChRedEye
@@ -303,7 +305,7 @@
             this.ChRedEye.Font = new System.Drawing.Font("Cooper Black", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ChRedEye.ForeColor = System.Drawing.Color.White;
             this.ChRedEye.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.ChRedEye.Location = new System.Drawing.Point(747, 624);
+            this.ChRedEye.Location = new System.Drawing.Point(509, 661);
             this.ChRedEye.Name = "ChRedEye";
             this.ChRedEye.Size = new System.Drawing.Size(87, 91);
             this.ChRedEye.TabIndex = 2;
@@ -318,7 +320,7 @@
             this.ChIceCoffee.Font = new System.Drawing.Font("Cooper Black", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ChIceCoffee.ForeColor = System.Drawing.Color.White;
             this.ChIceCoffee.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.ChIceCoffee.Location = new System.Drawing.Point(1301, 45);
+            this.ChIceCoffee.Location = new System.Drawing.Point(1103, 90);
             this.ChIceCoffee.Name = "ChIceCoffee";
             this.ChIceCoffee.Size = new System.Drawing.Size(87, 91);
             this.ChIceCoffee.TabIndex = 2;
@@ -333,11 +335,11 @@
             this.labelAppleJuice.Font = new System.Drawing.Font("Cooper Black", 28.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelAppleJuice.ForeColor = System.Drawing.Color.Black;
             this.labelAppleJuice.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.labelAppleJuice.Location = new System.Drawing.Point(826, 171);
+            this.labelAppleJuice.Location = new System.Drawing.Point(713, 216);
             this.labelAppleJuice.Name = "labelAppleJuice";
-            this.labelAppleJuice.Size = new System.Drawing.Size(400, 54);
+            this.labelAppleJuice.Size = new System.Drawing.Size(449, 54);
             this.labelAppleJuice.TabIndex = 2;
-            this.labelAppleJuice.Text = "Apple Juice : 2$";
+            this.labelAppleJuice.Text = "Caramel Cake : 2$";
             this.labelAppleJuice.Click += new System.EventHandler(this.labelAppleJuice_Click);
             // 
             // ChAppleJuice
@@ -346,7 +348,7 @@
             this.ChAppleJuice.Font = new System.Drawing.Font("Cooper Black", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ChAppleJuice.ForeColor = System.Drawing.Color.White;
             this.ChAppleJuice.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.ChAppleJuice.Location = new System.Drawing.Point(1274, 141);
+            this.ChAppleJuice.Location = new System.Drawing.Point(1187, 186);
             this.ChAppleJuice.Name = "ChAppleJuice";
             this.ChAppleJuice.Size = new System.Drawing.Size(87, 91);
             this.ChAppleJuice.TabIndex = 2;
@@ -361,7 +363,7 @@
             this.labelChocolateMilk.Font = new System.Drawing.Font("Cooper Black", 28.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelChocolateMilk.ForeColor = System.Drawing.Color.Black;
             this.labelChocolateMilk.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.labelChocolateMilk.Location = new System.Drawing.Point(826, 267);
+            this.labelChocolateMilk.Location = new System.Drawing.Point(713, 312);
             this.labelChocolateMilk.Name = "labelChocolateMilk";
             this.labelChocolateMilk.Size = new System.Drawing.Size(477, 54);
             this.labelChocolateMilk.TabIndex = 2;
@@ -374,7 +376,7 @@
             this.ChChocolateMilk.Font = new System.Drawing.Font("Cooper Black", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ChChocolateMilk.ForeColor = System.Drawing.Color.White;
             this.ChChocolateMilk.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.ChChocolateMilk.Location = new System.Drawing.Point(1340, 237);
+            this.ChChocolateMilk.Location = new System.Drawing.Point(1227, 282);
             this.ChChocolateMilk.Name = "ChChocolateMilk";
             this.ChChocolateMilk.Size = new System.Drawing.Size(87, 91);
             this.ChChocolateMilk.TabIndex = 2;
@@ -389,7 +391,7 @@
             this.label1.Font = new System.Drawing.Font("Cooper Black", 28.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Black;
             this.label1.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.label1.Location = new System.Drawing.Point(826, 363);
+            this.label1.Location = new System.Drawing.Point(713, 408);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(418, 54);
             this.label1.TabIndex = 2;
@@ -402,7 +404,7 @@
             this.ChBananaMilk.Font = new System.Drawing.Font("Cooper Black", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ChBananaMilk.ForeColor = System.Drawing.Color.White;
             this.ChBananaMilk.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.ChBananaMilk.Location = new System.Drawing.Point(1294, 333);
+            this.ChBananaMilk.Location = new System.Drawing.Point(1181, 378);
             this.ChBananaMilk.Name = "ChBananaMilk";
             this.ChBananaMilk.Size = new System.Drawing.Size(87, 91);
             this.ChBananaMilk.TabIndex = 2;
@@ -411,12 +413,38 @@
             this.ChBananaMilk.MouseEnter += new System.EventHandler(this.ChBananaMilk_MouseEnter);
             this.ChBananaMilk.MouseLeave += new System.EventHandler(this.ChBananaMilk_MouseLeave);
             // 
-            // FormColdDrinks
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Cooper Black", 31.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.GreenYellow;
+            this.label2.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.label2.Location = new System.Drawing.Point(20, 52);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(198, 61);
+            this.label2.TabIndex = 2;
+            this.label2.Text = "Jellies";
+            this.label2.Click += new System.EventHandler(this.LabelBlackCoffee_Click);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Cooper Black", 31.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.GreenYellow;
+            this.label3.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.label3.Location = new System.Drawing.Point(711, 48);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(187, 61);
+            this.label3.TabIndex = 4;
+            this.label3.Text = "Cakes";
+            // 
+            // FormDesserts
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.IndianRed;
-            this.ClientSize = new System.Drawing.Size(1432, 818);
+            this.ClientSize = new System.Drawing.Size(1448, 880);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.ChRedEye);
             this.Controls.Add(this.ChBananaMilk);
             this.Controls.Add(this.ChChocolateMilk);
@@ -437,17 +465,18 @@
             this.Controls.Add(this.labelLatte);
             this.Controls.Add(this.ChEspresso);
             this.Controls.Add(this.labelEspresso);
-            this.Controls.Add(this.ChBlackCoffee);
-            this.Controls.Add(this.LabelBlackCoffee);
+            this.Controls.Add(this.ChStrawberryJelly);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.LableStrawberryJelly);
             this.Controls.Add(this.Back);
             this.Controls.Add(this.menuStrip1);
             this.ForeColor = System.Drawing.SystemColors.Control;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
             this.MaximizeBox = false;
-            this.Name = "FormColdDrinks";
+            this.Name = "FormDesserts";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Cold Drinks";
+            this.Text = "Desserts";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
@@ -458,8 +487,8 @@
         #endregion
 
         private System.Windows.Forms.Label Back;
-        private System.Windows.Forms.Label LabelBlackCoffee;
-        private System.Windows.Forms.Label ChBlackCoffee;
+        private System.Windows.Forms.Label LableStrawberryJelly;
+        private System.Windows.Forms.Label ChStrawberryJelly;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem shopingListToolStripMenuItem;
         private System.Windows.Forms.Label labelEspresso;
@@ -483,5 +512,7 @@
         private System.Windows.Forms.Label ChChocolateMilk;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label ChBananaMilk;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
     }
 }

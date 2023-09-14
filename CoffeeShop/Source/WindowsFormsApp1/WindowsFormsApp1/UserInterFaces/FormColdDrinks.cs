@@ -47,12 +47,12 @@ namespace WindowsFormsApp1.UserInterFaces
 
         private void ChBlackCoffee_MouseEnter(object sender, EventArgs e)
         {
-            ChBlackCoffee.ForeColor = Color.GreenYellow;
+            ChLemonade.ForeColor = Color.GreenYellow;
         }
 
         private void ChBlackCoffee_MouseLeave(object sender, EventArgs e)
         {
-            ChBlackCoffee.ForeColor = Color.White;
+            ChLemonade.ForeColor = Color.White;
         }
 
         private void ChEspresso_MouseEnter(object sender, EventArgs e)

@@ -99,6 +99,7 @@
             this.Dessert.Size = new System.Drawing.Size(289, 69);
             this.Dessert.TabIndex = 0;
             this.Dessert.Text = "Desserts";
+            this.Dessert.Click += new System.EventHandler(this.Dessert_Click);
             this.Dessert.MouseEnter += new System.EventHandler(this.Dessert_MouseEnter);
             this.Dessert.MouseLeave += new System.EventHandler(this.Dessert_MouseLeave);
             // 

@@ -30,12 +30,12 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormColdDrinks));
             this.Back = new System.Windows.Forms.Label();
-            this.LabelBlackCoffee = new System.Windows.Forms.Label();
-            this.ChBlackCoffee = new System.Windows.Forms.Label();
+            this.LabelLemonade = new System.Windows.Forms.Label();
+            this.ChLemonade = new System.Windows.Forms.Label();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.shopingListToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.CountShopping = new System.Windows.Forms.ToolStripMenuItem();
-            this.labelEspresso = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.ChEspresso = new System.Windows.Forms.Label();
             this.labelLatte = new System.Windows.Forms.Label();
             this.ChLatte = new System.Windows.Forms.Label();
@@ -74,33 +74,33 @@
             this.Back.MouseEnter += new System.EventHandler(this.Back_MouseEnter);
             this.Back.MouseLeave += new System.EventHandler(this.Back_MouseLeave);
             // 
-            // LabelBlackCoffee
+            // LabelLemonade
             // 
-            this.LabelBlackCoffee.AutoSize = true;
-            this.LabelBlackCoffee.Font = new System.Drawing.Font("Cooper Black", 28.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LabelBlackCoffee.ForeColor = System.Drawing.Color.Black;
-            this.LabelBlackCoffee.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.LabelBlackCoffee.Location = new System.Drawing.Point(16, 75);
-            this.LabelBlackCoffee.Name = "LabelBlackCoffee";
-            this.LabelBlackCoffee.Size = new System.Drawing.Size(360, 54);
-            this.LabelBlackCoffee.TabIndex = 2;
-            this.LabelBlackCoffee.Text = "Lemonade : 1$";
-            this.LabelBlackCoffee.Click += new System.EventHandler(this.LabelBlackCoffee_Click);
+            this.LabelLemonade.AutoSize = true;
+            this.LabelLemonade.Font = new System.Drawing.Font("Cooper Black", 28.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LabelLemonade.ForeColor = System.Drawing.Color.Black;
+            this.LabelLemonade.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.LabelLemonade.Location = new System.Drawing.Point(16, 75);
+            this.LabelLemonade.Name = "LabelLemonade";
+            this.LabelLemonade.Size = new System.Drawing.Size(360, 54);
+            this.LabelLemonade.TabIndex = 2;
+            this.LabelLemonade.Text = "Lemonade : 1$";
+            this.LabelLemonade.Click += new System.EventHandler(this.LabelBlackCoffee_Click);
             // 
-            // ChBlackCoffee
+            // ChLemonade
             // 
-            this.ChBlackCoffee.AutoSize = true;
-            this.ChBlackCoffee.Font = new System.Drawing.Font("Cooper Black", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ChBlackCoffee.ForeColor = System.Drawing.Color.White;
-            this.ChBlackCoffee.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.ChBlackCoffee.Location = new System.Drawing.Point(416, 51);
-            this.ChBlackCoffee.Name = "ChBlackCoffee";
-            this.ChBlackCoffee.Size = new System.Drawing.Size(87, 91);
-            this.ChBlackCoffee.TabIndex = 2;
-            this.ChBlackCoffee.Text = "+";
-            this.ChBlackCoffee.Click += new System.EventHandler(this.ChBlackCoffee_Click);
-            this.ChBlackCoffee.MouseEnter += new System.EventHandler(this.ChBlackCoffee_MouseEnter);
-            this.ChBlackCoffee.MouseLeave += new System.EventHandler(this.ChBlackCoffee_MouseLeave);
+            this.ChLemonade.AutoSize = true;
+            this.ChLemonade.Font = new System.Drawing.Font("Cooper Black", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ChLemonade.ForeColor = System.Drawing.Color.White;
+            this.ChLemonade.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.ChLemonade.Location = new System.Drawing.Point(416, 51);
+            this.ChLemonade.Name = "ChLemonade";
+            this.ChLemonade.Size = new System.Drawing.Size(87, 91);
+            this.ChLemonade.TabIndex = 2;
+            this.ChLemonade.Text = "+";
+            this.ChLemonade.Click += new System.EventHandler(this.ChBlackCoffee_Click);
+            this.ChLemonade.MouseEnter += new System.EventHandler(this.ChBlackCoffee_MouseEnter);
+            this.ChLemonade.MouseLeave += new System.EventHandler(this.ChBlackCoffee_MouseLeave);
             // 
             // menuStrip1
             // 
@@ -131,18 +131,18 @@
             this.CountShopping.Size = new System.Drawing.Size(32, 26);
             this.CountShopping.Text = "0";
             // 
-            // labelEspresso
+            // label3
             // 
-            this.labelEspresso.AutoSize = true;
-            this.labelEspresso.Font = new System.Drawing.Font("Cooper Black", 28.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelEspresso.ForeColor = System.Drawing.Color.Black;
-            this.labelEspresso.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.labelEspresso.Location = new System.Drawing.Point(16, 171);
-            this.labelEspresso.Name = "labelEspresso";
-            this.labelEspresso.Size = new System.Drawing.Size(271, 54);
-            this.labelEspresso.TabIndex = 2;
-            this.labelEspresso.Text = "Mojito : 1$";
-            this.labelEspresso.Click += new System.EventHandler(this.labelEspresso_Click);
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Cooper Black", 28.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.Black;
+            this.label3.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.label3.Location = new System.Drawing.Point(16, 171);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(271, 54);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "Mojito : 1$";
+            this.label3.Click += new System.EventHandler(this.labelEspresso_Click);
             // 
             // ChEspresso
             // 
@@ -436,9 +436,9 @@
             this.Controls.Add(this.ChLatte);
             this.Controls.Add(this.labelLatte);
             this.Controls.Add(this.ChEspresso);
-            this.Controls.Add(this.labelEspresso);
-            this.Controls.Add(this.ChBlackCoffee);
-            this.Controls.Add(this.LabelBlackCoffee);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.ChLemonade);
+            this.Controls.Add(this.LabelLemonade);
             this.Controls.Add(this.Back);
             this.Controls.Add(this.menuStrip1);
             this.ForeColor = System.Drawing.SystemColors.Control;
@@ -458,11 +458,11 @@
         #endregion
 
         private System.Windows.Forms.Label Back;
-        private System.Windows.Forms.Label LabelBlackCoffee;
-        private System.Windows.Forms.Label ChBlackCoffee;
+        private System.Windows.Forms.Label LabelLemonade;
+        private System.Windows.Forms.Label ChLemonade;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem shopingListToolStripMenuItem;
-        private System.Windows.Forms.Label labelEspresso;
+        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label ChEspresso;
         private System.Windows.Forms.Label labelLatte;
         private System.Windows.Forms.Label ChLatte;
