@@ -351,15 +351,15 @@ namespace WindowsFormsApp1.UserInterFaces
 
         private void ChChocolateMilk_Click(object sender, EventArgs e)
         {
-            // Chocolate Milk : 3$
+            // Carrot Cake : 2$
             LLProducts lLProducts = new LLProducts();
-            if (lLProducts.UpdateSell(17))
+            if (lLProducts.UpdateSell(28))
             {
                 int Temp_CountShpping = Convert.ToInt32(CountShopping.Text);
                 Temp_CountShpping++;
                 CountShopping.Text = Temp_CountShpping.ToString();
                 LLPurchase lPurchase = new LLPurchase();
-                lPurchase.CheckIs("Chocolate Milk", 3);
+                lPurchase.CheckIs("Carrot Cake", 2);
             }
             else
             {
@@ -369,8 +369,8 @@ namespace WindowsFormsApp1.UserInterFaces
 
         private void labelChocolateMilk_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Fresh cow's milk plus fresh and bitter " +
-                "Brazilian cocoa with sugar and a little Nutella.", "Description", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            MessageBox.Show("Carrot cake is a cake that contains carrots mixed with butter. Carrot usually softens" +
+                " during cooking, and the cake has a soft and dense texture.", "Description", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         private void ChChocolateMilk_MouseEnter(object sender, EventArgs e)
@@ -385,20 +385,22 @@ namespace WindowsFormsApp1.UserInterFaces
 
         private void label1_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Fresh milk plus delicious and sweet bananas with a few pieces of ice.", "Description", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            MessageBox.Show("It is a kind of cake flavored with melted" +
+                " chocolate and cocoa powder. A piece of a chocolate cake sprinkled with cocoa powder is served on a white plate decorated with chocolate sauce. " +
+"be made", "Description", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         private void ChBananaMilk_Click(object sender, EventArgs e)
         {
-            // Banana Milk : 2$
+            // Chocolate Cake : 3$
             LLProducts lLProducts = new LLProducts();
-            if (lLProducts.UpdateSell(18))
+            if (lLProducts.UpdateSell(29))
             {
                 int Temp_CountShpping = Convert.ToInt32(CountShopping.Text);
                 Temp_CountShpping++;
                 CountShopping.Text = Temp_CountShpping.ToString();
                 LLPurchase lPurchase = new LLPurchase();
-                lPurchase.CheckIs("Banana Milk", 2);
+                lPurchase.CheckIs("Chocolate Cake", 3);
             }
             else
             {
@@ -414,6 +416,144 @@ namespace WindowsFormsApp1.UserInterFaces
         private void ChBananaMilk_MouseLeave(object sender, EventArgs e)
         {
             ChBananaMilk.ForeColor = Color.White;
+        }
+
+        private void OrangeCakelabel_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Orange cake is a cake with a unique taste of " +
+                "orange with pieces of almonds and rose water.", "Description", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        private void ChOrangeCake_Click(object sender, EventArgs e)
+        {
+            // Orange Cake : 2$
+            LLProducts lLProducts = new LLProducts();
+            if (lLProducts.UpdateSell(30))
+            {
+                int Temp_CountShpping = Convert.ToInt32(CountShopping.Text);
+                Temp_CountShpping++;
+                CountShopping.Text = Temp_CountShpping.ToString();
+                LLPurchase lPurchase = new LLPurchase();
+                lPurchase.CheckIs("Orange Cake", 2);
+            }
+            else
+            {
+                MessageBox.Show("This Product Is Not Available In Stock", "System Message", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+            }
+        }
+
+        private void ChOrangeCake_MouseEnter(object sender, EventArgs e)
+        {
+            ChOrangeCake.ForeColor = Color.GreenYellow;
+        }
+
+        private void ChOrangeCake_MouseLeave(object sender, EventArgs e)
+        {
+            ChOrangeCake.ForeColor = Color.White;
+        }
+
+        private void ChHazelnutCookies_Click(object sender, EventArgs e)
+        {
+            // Hazelnut Cookies : 3$
+            LLProducts lLProducts = new LLProducts();
+            if (lLProducts.UpdateSell(31))
+            {
+                int Temp_CountShpping = Convert.ToInt32(CountShopping.Text);
+                Temp_CountShpping++;
+                CountShopping.Text = Temp_CountShpping.ToString();
+                LLPurchase lPurchase = new LLPurchase();
+                lPurchase.CheckIs("Hazelnut Cookies", 3);
+            }
+            else
+            {
+                MessageBox.Show("This Product Is Not Available In Stock", "System Message", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+            }
+        }
+
+        private void HazelnutCookieslabel_Click(object sender, EventArgs e)
+        {
+             MessageBox.Show("Pack Of 3", "Description", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        private void ChHazelnutCookies_MouseEnter(object sender, EventArgs e)
+        {
+            ChHazelnutCookies.ForeColor = Color.GreenYellow;    
+        }
+
+        private void ChHazelnutCookies_MouseLeave(object sender, EventArgs e)
+        {
+            ChHazelnutCookies.ForeColor = Color.White;
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+            // Walnut Cookie : 3$
+            LLProducts lLProducts = new LLProducts();
+            if (lLProducts.UpdateSell(32))
+            {
+                int Temp_CountShpping = Convert.ToInt32(CountShopping.Text);
+                Temp_CountShpping++;
+                CountShopping.Text = Temp_CountShpping.ToString();
+                LLPurchase lPurchase = new LLPurchase();
+                lPurchase.CheckIs("Walnut Cookie", 3);
+            }
+            else
+            {
+                MessageBox.Show("This Product Is Not Available In Stock", "System Message", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+            }
+        }
+
+        private void WalnutCookielabel_Click(object sender, EventArgs e)
+        {
+             MessageBox.Show("Pack Of 3","Description", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        private void ChWalnutCookie_MouseEnter(object sender, EventArgs e)
+        {
+            ChWalnutCookie.ForeColor = Color.GreenYellow;   
+        }
+
+        private void ChWalnutCookie_MouseLeave(object sender, EventArgs e)
+        {
+            ChWalnutCookie.ForeColor = Color.White;
+        }
+
+        private void CoconutCookieslabel_Click(object sender, EventArgs e)
+        {
+             MessageBox.Show("Pack Of 3","Description", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        private void CoconutCookielabel_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Pack Of 3", "Description", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        private void ChCoconutCookie_MouseEnter(object sender, EventArgs e)
+        {
+            ChCoconutCookie.ForeColor = Color.GreenYellow;
+        }
+
+        private void ChCoconutCookie_MouseLeave(object sender, EventArgs e)
+        {
+            ChCoconutCookie.ForeColor = Color.White;
+        }
+
+        private void ChCoconutCookie_Click(object sender, EventArgs e)
+        {
+            // Coconut Cookie : 3$
+            LLProducts lLProducts = new LLProducts();
+            if (lLProducts.UpdateSell(33))
+            {
+                int Temp_CountShpping = Convert.ToInt32(CountShopping.Text);
+                Temp_CountShpping++;
+                CountShopping.Text = Temp_CountShpping.ToString();
+                LLPurchase lPurchase = new LLPurchase();
+                lPurchase.CheckIs("Coconut Cookie", 3);
+            }
+            else
+            {
+                MessageBox.Show("This Product Is Not Available In Stock", "System Message", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+            }
         }
     }
 }
