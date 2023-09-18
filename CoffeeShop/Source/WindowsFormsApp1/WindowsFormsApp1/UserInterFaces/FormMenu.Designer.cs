@@ -114,6 +114,7 @@
             this.Breakfast.Size = new System.Drawing.Size(360, 69);
             this.Breakfast.TabIndex = 0;
             this.Breakfast.Text = "Breakfasts";
+            this.Breakfast.Click += new System.EventHandler(this.Breakfast_Click);
             this.Breakfast.MouseEnter += new System.EventHandler(this.Breakfast_MouseEnter);
             this.Breakfast.MouseLeave += new System.EventHandler(this.Breakfast_MouseLeave);
             // 

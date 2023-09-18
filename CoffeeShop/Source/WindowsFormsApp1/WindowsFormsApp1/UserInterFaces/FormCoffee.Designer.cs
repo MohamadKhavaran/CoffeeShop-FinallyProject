@@ -59,7 +59,7 @@
             this.Back.Font = new System.Drawing.Font("Cooper Black", 28.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Back.ForeColor = System.Drawing.Color.White;
             this.Back.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.Back.Location = new System.Drawing.Point(12, 552);
+            this.Back.Location = new System.Drawing.Point(16, 471);
             this.Back.Name = "Back";
             this.Back.Size = new System.Drawing.Size(143, 54);
             this.Back.TabIndex = 1;
@@ -104,7 +104,7 @@
             this.CountShopping});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1075, 28);
+            this.menuStrip1.Size = new System.Drawing.Size(1099, 28);
             this.menuStrip1.TabIndex = 3;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -215,7 +215,7 @@
             this.labelAmericano.Font = new System.Drawing.Font("Cooper Black", 28.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelAmericano.ForeColor = System.Drawing.Color.Black;
             this.labelAmericano.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.labelAmericano.Location = new System.Drawing.Point(16, 451);
+            this.labelAmericano.Location = new System.Drawing.Point(611, 357);
             this.labelAmericano.Name = "labelAmericano";
             this.labelAmericano.Size = new System.Drawing.Size(380, 54);
             this.labelAmericano.TabIndex = 2;
@@ -228,7 +228,7 @@
             this.ChAmericano.Font = new System.Drawing.Font("Cooper Black", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ChAmericano.ForeColor = System.Drawing.Color.White;
             this.ChAmericano.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.ChAmericano.Location = new System.Drawing.Point(419, 421);
+            this.ChAmericano.Location = new System.Drawing.Point(1014, 327);
             this.ChAmericano.Name = "ChAmericano";
             this.ChAmericano.Size = new System.Drawing.Size(87, 91);
             this.ChAmericano.TabIndex = 2;
@@ -326,7 +326,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.IndianRed;
-            this.ClientSize = new System.Drawing.Size(1075, 621);
+            this.ClientSize = new System.Drawing.Size(1099, 543);
             this.Controls.Add(this.ChRedEye);
             this.Controls.Add(this.ChIceCoffee);
             this.Controls.Add(this.ChAffogato);

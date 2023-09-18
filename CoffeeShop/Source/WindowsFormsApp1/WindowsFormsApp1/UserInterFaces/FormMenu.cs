@@ -180,5 +180,13 @@ namespace WindowsFormsApp1.UserInterFaces
             formDesserts.ShowDialog();
             this.Close();
         }
+
+        private void Breakfast_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FormBreakfasts formBreakfasts = new FormBreakfasts();
+            formBreakfasts.ShowDialog();
+            this.Close();
+        }
     }
 }

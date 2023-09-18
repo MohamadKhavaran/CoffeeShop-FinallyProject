@@ -103,6 +103,13 @@ namespace WindowsFormsApp1.UserInterFaces
                     this.Hide();
                     form.ShowDialog();
                 }
+                if (identifier_variable.Equals("Breakfasts"))
+                {
+
+                    FormBreakfasts form = new FormBreakfasts();
+                    this.Hide();
+                    form.ShowDialog();
+                }
             }
         }
 
