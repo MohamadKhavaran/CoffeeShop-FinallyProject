@@ -95,7 +95,7 @@ namespace WindowsFormsApp1.UserInterFaces
 
         private void labelCappuccino_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Raspberry Jelly !", "Description", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            MessageBox.Show("Breakfast in Germany can be summed up in German sausages or Wurst, local cheese, fresh bread and a strong and delicious coffee.", "Description", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         private void ChAmericano_MouseEnter(object sender, EventArgs e)
@@ -110,14 +110,16 @@ namespace WindowsFormsApp1.UserInterFaces
 
         private void labelAmericano_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Blueberry Jelly !", "Description", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            MessageBox.Show("American breakfast a perfect combination of bacon and fried egg next to sausage and" +
+                " fried onion and cheese next to pancakes.", "Description", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
 
 
         private void labelAffogato_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Orange Jelly !", "Description", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            MessageBox.Show("Spanish breakfast includes a cup " +
+                "of coffee with a croissant, toast with a little cheese and jam with coffee.", "Description", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         private void ChAffogato_MouseEnter(object sender, EventArgs e)
@@ -142,9 +144,8 @@ namespace WindowsFormsApp1.UserInterFaces
 
         private void labelIceCoffee_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Apple pie or apple tart is one of the types of fruit pies whose main ingredient is apple." +
-                " In some of its types, whipped cream or ice cream may be placed on it. The dough of this pastry usually consists of two parts, the lower part is one piece and the upper part has narrow strips."
-, "Description", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            MessageBox.Show("A Cup Of Saffron Tea !", "Description", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
         }
 
         private void ChRedEye_MouseEnter(object sender, EventArgs e)
@@ -158,7 +159,7 @@ namespace WindowsFormsApp1.UserInterFaces
 
         private void labelRedEye_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Banana Jelly !", "Description", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            MessageBox.Show("The Italian breakfast dish includes a cup of espresso with 2 Cornetto cookies.", "Description", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         private void ChBlackCoffee_Click(object sender, EventArgs e)
@@ -218,15 +219,15 @@ namespace WindowsFormsApp1.UserInterFaces
 
         private void ChCappuccino_Click(object sender, EventArgs e)
         {
-            // Raspberry Jelly: 3$
+            // German Breakfast : 12$
             LLProducts lLProducts = new LLProducts();
-            if (lLProducts.UpdateSell(22))
+            if (lLProducts.UpdateSell(37))
             {
                 int Temp_CountShpping = Convert.ToInt32(CountShopping.Text);
                 Temp_CountShpping++;
                 CountShopping.Text = Temp_CountShpping.ToString();
                 LLPurchase lPurchase = new LLPurchase();
-                lPurchase.CheckIs("Raspberry Jelly", 3);
+                lPurchase.CheckIs("German Breakfast", 12);
             }
             else
             {
@@ -236,15 +237,15 @@ namespace WindowsFormsApp1.UserInterFaces
 
         private void ChAmericano_Click(object sender, EventArgs e)
         {
-            // Blueberry Jelly : 3$
+            // American Breakfast : 12$
             LLProducts lLProducts = new LLProducts();
-            if (lLProducts.UpdateSell(23))
+            if (lLProducts.UpdateSell(38))
             {
                 int Temp_CountShpping = Convert.ToInt32(CountShopping.Text);
                 Temp_CountShpping++;
                 CountShopping.Text = Temp_CountShpping.ToString();
                 LLPurchase lPurchase = new LLPurchase();
-                lPurchase.CheckIs("Blueberry Jelly", 3);
+                lPurchase.CheckIs("American Breakfast", 12);
             }
             else
             {
@@ -253,15 +254,15 @@ namespace WindowsFormsApp1.UserInterFaces
         }
         private void ChAffogato_Click(object sender, EventArgs e)
         {
-            // Orange Jelly : 3$
+            // Spanish Breakfast : 12$
             LLProducts lLProducts = new LLProducts();
-            if (lLProducts.UpdateSell(24))
+            if (lLProducts.UpdateSell(39))
             {
                 int Temp_CountShpping = Convert.ToInt32(CountShopping.Text);
                 Temp_CountShpping++;
                 CountShopping.Text = Temp_CountShpping.ToString();
                 LLPurchase lPurchase = new LLPurchase();
-                lPurchase.CheckIs("Orange Jelly", 3);
+                lPurchase.CheckIs("Spanish Breakfast", 12);
             }
             else
             {
@@ -270,15 +271,15 @@ namespace WindowsFormsApp1.UserInterFaces
         }
         private void ChIceCoffee_Click(object sender, EventArgs e)
         {
-            // Apple Pie : 2$
+            // Saffron Tea  : 3$
             LLProducts lLProducts = new LLProducts();
-            if (lLProducts.UpdateSell(26))
+            if (lLProducts.UpdateSell(41))
             {
                 int Temp_CountShpping = Convert.ToInt32(CountShopping.Text);
                 Temp_CountShpping++;
                 CountShopping.Text = Temp_CountShpping.ToString();
                 LLPurchase lPurchase = new LLPurchase();
-                lPurchase.CheckIs("Apple Pie", 2);
+                lPurchase.CheckIs("Saffron Tea ", 3);
             }
             else
             {
@@ -288,15 +289,15 @@ namespace WindowsFormsApp1.UserInterFaces
 
         private void ChRedEye_Click(object sender, EventArgs e)
         {
-            // Banana Jelly : 3$
+            // Italian Breakfast : 12$
             LLProducts lLProducts = new LLProducts();
-            if (lLProducts.UpdateSell(25))
+            if (lLProducts.UpdateSell(40))
             {
                 int Temp_CountShpping = Convert.ToInt32(CountShopping.Text);
                 Temp_CountShpping++;
                 CountShopping.Text = Temp_CountShpping.ToString();
                 LLPurchase lPurchase = new LLPurchase();
-                lPurchase.CheckIs("Banana Jelly", 3);
+                lPurchase.CheckIs("Italian Breakfast", 12);
             }
             else
             {
@@ -315,23 +316,20 @@ namespace WindowsFormsApp1.UserInterFaces
 
         private void labelAppleJuice_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Caramel cream cake is one of the most delicious and fragrant types of cakes that is very popular. " +
-                "This cake is super easy and delicious.At the stage when the sugar turns orange-brown and has a stretchy texture, it is called caramel." +
-                " At this stage, the sugar temperature reaches about 170 degrees Celsius. Caramel sauce is obtained from the combination of heated sugar with cream and butter and is used" +
-                " as a topping or filling for all kinds of cakes and desserts.", "Description", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            MessageBox.Show("A Glass Of Hot Chocolate !", "Description", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         private void ChAppleJuice_Click(object sender, EventArgs e)
         {
-            // Caramel Cake : 2$
+            // Hot Chocolate : 3$
             LLProducts lLProducts = new LLProducts();
-            if (lLProducts.UpdateSell(27))
+            if (lLProducts.UpdateSell(42))
             {
                 int Temp_CountShpping = Convert.ToInt32(CountShopping.Text);
                 Temp_CountShpping++;
                 CountShopping.Text = Temp_CountShpping.ToString();
                 LLPurchase lPurchase = new LLPurchase();
-                lPurchase.CheckIs("Caramel Cake", 2);
+                lPurchase.CheckIs("Hot Chocolate", 3);
             }
             else
             {
@@ -351,15 +349,15 @@ namespace WindowsFormsApp1.UserInterFaces
 
         private void ChChocolateMilk_Click(object sender, EventArgs e)
         {
-            // Carrot Cake : 2$
+            // Chamomile Tea : 3$
             LLProducts lLProducts = new LLProducts();
-            if (lLProducts.UpdateSell(28))
+            if (lLProducts.UpdateSell(43))
             {
                 int Temp_CountShpping = Convert.ToInt32(CountShopping.Text);
                 Temp_CountShpping++;
                 CountShopping.Text = Temp_CountShpping.ToString();
                 LLPurchase lPurchase = new LLPurchase();
-                lPurchase.CheckIs("Carrot Cake", 2);
+                lPurchase.CheckIs("Chamomile Tea", 3);
             }
             else
             {
@@ -369,8 +367,7 @@ namespace WindowsFormsApp1.UserInterFaces
 
         private void labelChocolateMilk_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Carrot cake is a cake that contains carrots mixed with butter. Carrot usually softens" +
-                " during cooking, and the cake has a soft and dense texture.", "Description", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            MessageBox.Show("A Cup Of Chamomile Tea !", "Description", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         private void ChChocolateMilk_MouseEnter(object sender, EventArgs e)
@@ -407,17 +404,6 @@ namespace WindowsFormsApp1.UserInterFaces
                 MessageBox.Show("This Product Is Not Available In Stock", "System Message", MessageBoxButtons.OK, MessageBoxIcon.Stop);
             }
         }
-
-        private void ChBananaMilk_MouseEnter(object sender, EventArgs e)
-        {
-            ChBananaMilk.ForeColor = Color.GreenYellow;
-        }
-
-        private void ChBananaMilk_MouseLeave(object sender, EventArgs e)
-        {
-            ChBananaMilk.ForeColor = Color.White;
-        }
-
         private void OrangeCakelabel_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Orange cake is a cake with a unique taste of " +
@@ -442,16 +428,6 @@ namespace WindowsFormsApp1.UserInterFaces
             }
         }
 
-        private void ChOrangeCake_MouseEnter(object sender, EventArgs e)
-        {
-            ChOrangeCake.ForeColor = Color.GreenYellow;
-        }
-
-        private void ChOrangeCake_MouseLeave(object sender, EventArgs e)
-        {
-            ChOrangeCake.ForeColor = Color.White;
-        }
-
         private void ChHazelnutCookies_Click(object sender, EventArgs e)
         {
             // Hazelnut Cookies : 3$
@@ -472,12 +448,12 @@ namespace WindowsFormsApp1.UserInterFaces
 
         private void HazelnutCookieslabel_Click(object sender, EventArgs e)
         {
-             MessageBox.Show("Pack Of 3", "Description", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            MessageBox.Show("Pack Of 3", "Description", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         private void ChHazelnutCookies_MouseEnter(object sender, EventArgs e)
         {
-            ChHazelnutCookies.ForeColor = Color.GreenYellow;    
+            ChHazelnutCookies.ForeColor = Color.GreenYellow;
         }
 
         private void ChHazelnutCookies_MouseLeave(object sender, EventArgs e)
@@ -505,12 +481,12 @@ namespace WindowsFormsApp1.UserInterFaces
 
         private void WalnutCookielabel_Click(object sender, EventArgs e)
         {
-             MessageBox.Show("Pack Of 3","Description", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            MessageBox.Show("Pack Of 3", "Description", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         private void ChWalnutCookie_MouseEnter(object sender, EventArgs e)
         {
-            ChWalnutCookie.ForeColor = Color.GreenYellow;   
+            ChWalnutCookie.ForeColor = Color.GreenYellow;
         }
 
         private void ChWalnutCookie_MouseLeave(object sender, EventArgs e)
@@ -520,7 +496,7 @@ namespace WindowsFormsApp1.UserInterFaces
 
         private void CoconutCookieslabel_Click(object sender, EventArgs e)
         {
-             MessageBox.Show("Pack Of 3","Description", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            MessageBox.Show("Pack Of 3", "Description", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         private void CoconutCookielabel_Click(object sender, EventArgs e)
