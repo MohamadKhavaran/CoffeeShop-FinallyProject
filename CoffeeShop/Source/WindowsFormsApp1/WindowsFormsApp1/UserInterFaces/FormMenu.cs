@@ -188,5 +188,13 @@ namespace WindowsFormsApp1.UserInterFaces
             formBreakfasts.ShowDialog();
             this.Close();
         }
+
+        private void Appetizer_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FormAppetizers formAppetizers = new FormAppetizers();
+            formAppetizers.ShowDialog();
+            this.Close();
+        }
     }
 }

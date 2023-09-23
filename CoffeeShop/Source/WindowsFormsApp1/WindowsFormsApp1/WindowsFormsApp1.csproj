@@ -68,6 +68,12 @@
     <Compile Include="UserInterFaces\FormBreakfasts.Designer.cs">
       <DependentUpon>FormBreakfasts.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserInterFaces\FormAppetizers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserInterFaces\FormAppetizers.Designer.cs">
+      <DependentUpon>FormAppetizers.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserInterFaces\FormDesserts.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -126,6 +132,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UserInterFaces\FormBreakfasts.resx">
       <DependentUpon>FormBreakfasts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserInterFaces\FormAppetizers.resx">
+      <DependentUpon>FormAppetizers.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserInterFaces\FormDesserts.resx">
       <DependentUpon>FormDesserts.cs</DependentUpon>

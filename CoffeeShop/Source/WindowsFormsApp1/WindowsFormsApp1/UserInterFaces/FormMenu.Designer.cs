@@ -129,6 +129,7 @@
             this.Appetizer.Size = new System.Drawing.Size(365, 69);
             this.Appetizer.TabIndex = 0;
             this.Appetizer.Text = "Appetizers";
+            this.Appetizer.Click += new System.EventHandler(this.Appetizer_Click);
             this.Appetizer.MouseEnter += new System.EventHandler(this.Appetizer_MouseEnter);
             this.Appetizer.MouseLeave += new System.EventHandler(this.Appetizer_MouseLeave);
             // 

@@ -23,19 +23,19 @@ namespace WindowsFormsApp1.UserInterFaces
             LoadData();
         }
 
-       private void CalculatePrice()
+        private void CalculatePrice()
         {
             int TotalPrice = 0;
             LLPurchase lLPurchase = new LLPurchase();
             DataTable dataTable = lLPurchase.Select();
             DataRow dataRow;
-            int CountRow = dataTable.Rows.Count;    
-            for(int i = 0; i < CountRow; i++)
+            int CountRow = dataTable.Rows.Count;
+            for (int i = 0; i < CountRow; i++)
             {
                 dataRow = dataTable.Rows[i];
-                TotalPrice += Convert.ToInt32(dataRow["Price"]);                
+                TotalPrice += Convert.ToInt32(dataRow["Price"]);
             }
-            LablePrice.Text=TotalPrice.ToString();
+            LablePrice.Text = TotalPrice.ToString();
         }
 
         private void LoadData()
@@ -49,7 +49,7 @@ namespace WindowsFormsApp1.UserInterFaces
 
             if (intIndexresetColumns == e.ColumnIndex)
             {
-                LLProducts lLProducts = new LLProducts();   
+                LLProducts lLProducts = new LLProducts();
                 LLPurchase lPurchase = new LLPurchase();
                 //                string ProductName = dataGridViewData["ProductName", e.RowIndex].Value.ToString();
                 string NameProduct = dataGridViewData["NameProduct", e.RowIndex].Value.ToString();
@@ -75,7 +75,7 @@ namespace WindowsFormsApp1.UserInterFaces
         private void FormPurchases_Show_FormClosed(object sender, FormClosedEventArgs e)
         {
             if (DialogResult.OK == MessageBox.Show("Saving Was Done Successfully", "System Message", MessageBoxButtons.OK, MessageBoxIcon.Information))
-                {
+            {
                 if (identifier_variable.Equals("Menu"))
                 {
                     FormMenu form = new FormMenu();
@@ -107,6 +107,13 @@ namespace WindowsFormsApp1.UserInterFaces
                 {
 
                     FormBreakfasts form = new FormBreakfasts();
+                    this.Hide();
+                    form.ShowDialog();
+                }
+                if (identifier_variable.Equals("Appetizers"))
+                {
+
+                    FormAppetizers form = new FormAppetizers();
                     this.Hide();
                     form.ShowDialog();
                 }
