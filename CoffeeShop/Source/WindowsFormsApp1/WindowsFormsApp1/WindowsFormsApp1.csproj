@@ -62,6 +62,12 @@
     <Compile Include="UserInterFaces\FormAuthentication.Designer.cs">
       <DependentUpon>FormAuthentication.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserInterFaces\FormFastFoods.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserInterFaces\FormFastFoods.Designer.cs">
+      <DependentUpon>FormFastFoods.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserInterFaces\FormBreakfasts.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -129,6 +135,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UserInterFaces\FormAuthentication.resx">
       <DependentUpon>FormAuthentication.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserInterFaces\FormFastFoods.resx">
+      <DependentUpon>FormFastFoods.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserInterFaces\FormBreakfasts.resx">
       <DependentUpon>FormBreakfasts.cs</DependentUpon>

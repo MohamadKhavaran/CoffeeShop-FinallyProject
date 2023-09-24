@@ -279,7 +279,7 @@ namespace WindowsFormsApp1.UserInterFaces
                 Temp_CountShpping++;
                 CountShopping.Text = Temp_CountShpping.ToString();
                 LLPurchase lPurchase = new LLPurchase();
-                lPurchase.CheckIs("Saffron Tea ", 3);
+                lPurchase.CheckIs("Saffron Tea", 3);
             }
             else
             {

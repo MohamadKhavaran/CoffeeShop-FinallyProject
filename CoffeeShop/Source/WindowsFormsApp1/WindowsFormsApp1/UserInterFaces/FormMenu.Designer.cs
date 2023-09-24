@@ -144,6 +144,7 @@
             this.FastFood.Size = new System.Drawing.Size(356, 69);
             this.FastFood.TabIndex = 0;
             this.FastFood.Text = "Fast Foods";
+            this.FastFood.Click += new System.EventHandler(this.FastFood_Click);
             this.FastFood.MouseEnter += new System.EventHandler(this.FastFood_MouseEnter);
             this.FastFood.MouseLeave += new System.EventHandler(this.FastFood_MouseLeave);
             // 

@@ -196,5 +196,13 @@ namespace WindowsFormsApp1.UserInterFaces
             formAppetizers.ShowDialog();
             this.Close();
         }
+
+        private void FastFood_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FormFastFoods formFastFoods = new FormFastFoods();
+            formFastFoods.ShowDialog();
+            this.Close();
+        }
     }
 }

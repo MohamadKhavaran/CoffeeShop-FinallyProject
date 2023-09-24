@@ -117,6 +117,13 @@ namespace WindowsFormsApp1.UserInterFaces
                     this.Hide();
                     form.ShowDialog();
                 }
+                if (identifier_variable.Equals("FastFoods"))
+                {
+
+                    FormFastFoods  form = new FormFastFoods();
+                    this.Hide();
+                    form.ShowDialog();
+                }
             }
         }
 
