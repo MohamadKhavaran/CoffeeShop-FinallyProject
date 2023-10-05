@@ -100,37 +100,7 @@ namespace WindowsFormsApp1.UserInterFaces
             FastFood.ForeColor = Color.Black;
 
         }
-
-        private void HotDrink_MouseEnter(object sender, EventArgs e)
-        {
-            HotDrink.ForeColor = Color.Yellow;  
-        }
-
-        private void HotDrink_MouseLeave(object sender, EventArgs e)
-        {
-            HotDrink.ForeColor = Color.Black;
-        }
-
-        private void special_offer_MouseEnter(object sender, EventArgs e)
-        {
-            special_offer.ForeColor = Color.Yellow; 
-        }
-
-        private void special_offer_MouseLeave(object sender, EventArgs e)
-        {
-            special_offer.ForeColor = Color.Black;
-        }
-
-        private void special_offer_MouseEnter_1(object sender, EventArgs e)
-        {
-            special_offer.ForeColor = Color.Yellow;
-        }
-
-        private void special_offer_MouseLeave_1(object sender, EventArgs e)
-        {
-            special_offer.ForeColor = Color.Firebrick;
-        }
-
+     
         private void Back_MouseEnter(object sender, EventArgs e)
         {
             Back.ForeColor = Color.Yellow;

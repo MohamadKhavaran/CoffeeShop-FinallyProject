@@ -31,13 +31,13 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormAdmin));
             this.dataGridViewData = new System.Windows.Forms.DataGridView();
-            this.bindingSourceData = new System.Windows.Forms.BindingSource(this.components);
             this.ProductCode = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ProductName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ProductNumber = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ProductPrice = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.AddProduct = new System.Windows.Forms.DataGridViewButtonColumn();
             this.RemoveProduct = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.bindingSourceData = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewData)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSourceData)).BeginInit();
             this.SuspendLayout();
@@ -46,7 +46,6 @@
             // 
             this.dataGridViewData.AllowUserToAddRows = false;
             this.dataGridViewData.AllowUserToDeleteRows = false;
-            this.dataGridViewData.AllowUserToOrderColumns = true;
             this.dataGridViewData.AutoGenerateColumns = false;
             this.dataGridViewData.BackgroundColor = System.Drawing.SystemColors.Control;
             this.dataGridViewData.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -102,6 +101,7 @@
             this.ProductPrice.MinimumWidth = 6;
             this.ProductPrice.Name = "ProductPrice";
             this.ProductPrice.ReadOnly = true;
+            this.ProductPrice.Width = 125;
             // 
             // AddProduct
             // 
@@ -111,6 +111,7 @@
             this.AddProduct.ReadOnly = true;
             this.AddProduct.Text = "+";
             this.AddProduct.UseColumnTextForButtonValue = true;
+            this.AddProduct.Width = 125;
             // 
             // RemoveProduct
             // 
@@ -120,6 +121,7 @@
             this.RemoveProduct.ReadOnly = true;
             this.RemoveProduct.Text = "-";
             this.RemoveProduct.UseColumnTextForButtonValue = true;
+            this.RemoveProduct.Width = 125;
             // 
             // FormAdmin
             // 

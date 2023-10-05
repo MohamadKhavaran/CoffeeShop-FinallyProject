@@ -183,9 +183,29 @@ namespace WindowsFormsApp1.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap pngtree_instagram_icon_png_image_6315974 {
+            get {
+                object obj = ResourceManager.GetObject("pngtree_instagram_icon_png_image_6315974", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap red_banner_clipart_design_illustration_free_png {
             get {
                 object obj = ResourceManager.GetObject("red_banner_clipart_design_illustration_free_png", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Telegram_logo_svg {
+            get {
+                object obj = ResourceManager.GetObject("Telegram_logo_svg", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

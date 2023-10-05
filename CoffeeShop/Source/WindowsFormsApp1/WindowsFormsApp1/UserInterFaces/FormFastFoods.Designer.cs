@@ -269,7 +269,7 @@
             this.ChAffogato.Font = new System.Drawing.Font("Cooper Black", 28.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ChAffogato.ForeColor = System.Drawing.Color.White;
             this.ChAffogato.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.ChAffogato.Location = new System.Drawing.Point(419, 446);
+            this.ChAffogato.Location = new System.Drawing.Point(408, 446);
             this.ChAffogato.Name = "ChAffogato";
             this.ChAffogato.Size = new System.Drawing.Size(51, 54);
             this.ChAffogato.TabIndex = 2;

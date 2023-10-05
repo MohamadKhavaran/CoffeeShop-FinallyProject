@@ -127,5 +127,9 @@ namespace WindowsFormsApp1.UserInterFaces
             }
         }
 
+        private void FormPurchases_Show_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -154,6 +154,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Purchases";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FormPurchases_Show_FormClosed);
+            this.Load += new System.EventHandler(this.FormPurchases_Show_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewData)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSourceData)).EndInit();
             this.ResumeLayout(false);

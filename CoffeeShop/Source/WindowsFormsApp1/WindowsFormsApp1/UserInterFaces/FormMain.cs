@@ -79,7 +79,10 @@ namespace WindowsFormsApp1
 
         private void About_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            FormAboutUs formAboutUs = new FormAboutUs();    
+            formAboutUs.ShowDialog();
+            this.Close();
         }
 
         private void Login_as_admin_Click(object sender, EventArgs e)
